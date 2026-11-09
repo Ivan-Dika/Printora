@@ -1,0 +1,12 @@
+export type SessionUser = {id: string; username: string; name: string; phone: string; role: 'fo' | 'customer' | 'designer' | 'operator' | 'admin'; active: boolean; mustChange?: boolean};
+export const COOKIE: string;
+export const SESSION_HOURS: number;
+export function parseCookie(header: string | null, name?: string): string;
+export function sessionCookie(token: string, secure: boolean): string;
+export function clearedCookie(secure: boolean): string;
+export function login(username: string, password: string, ip?: string): Promise<{token: string; user: SessionUser}>;
+export function getSessionUser(req: Request): Promise<SessionUser | null>;
+export function logout(req: Request): Promise<void>;
+export function changePassword(req: Request, user: SessionUser, current: string, next: string): Promise<void>;
+export function startSession(userId: string): Promise<string>;
+export function throttle(key: string, max: number, windowMs: number): void;
