@@ -1,0 +1,14 @@
+import type {Pool, PoolConnection} from 'mysql2/promise';
+import type {State} from './domain';
+export const MAX_UPLOAD_MB: number;
+export const MAX_UPLOAD_BYTES: number;
+export function uploadDir(): string;
+export function pool(): Pool;
+export function migrate(): Promise<void>;
+export function readState(conn: PoolConnection): Promise<State>;
+export function seedIfEmpty(): Promise<void>;
+export function ensureReady(): Promise<void>;
+export function snapshot(): Promise<{state: State; revision: number}>;
+export function mutate(opts: {expectedRevision?: number | null; uploader: string; fn: (prev: State, conn: PoolConnection) => Promise<State | {next: State; extra?: unknown}> | State | {next: State; extra?: unknown}}): Promise<{state: State; revision: number; extra?: unknown}>;
+export function removeStaleUploads(): Promise<void>;
+export function reset(): Promise<void>;
