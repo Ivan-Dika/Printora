@@ -1,0 +1,11 @@
+export function waChatId(phone: string): string | null;
+export type Notice = {heading: string; name: string; intro?: string; order?: {id: string; title: string}; lines?: string[]; details?: [string, string][]; credentials?: {username: string; password: string}; files?: {file?: string; name: string; note?: string}[]; cta?: {label: string; url: string} | null; footer?: string};
+export function notifyContact(contact: {phone?: string; email?: string}, msg: {kind: string; subject: string; text?: string; notice?: Notice}, opt?: {wait?: boolean}): Promise<string[]>;
+export function orderCreatedNotice(o: {name: string; orderId: string; product: string; qty: unknown; mode: string; username: string; password: string; base: string}): Notice;
+export function prepareFiles(files: {file?: string; name: string}[]): Promise<{shown: {name: string; note?: string}[]; attachments: unknown[]}>;
+export const MAX_ATTACH_BYTES: number;
+export function testChannel(channel: string, to: string): Promise<void>;
+export function recentMessages(limit?: number): Promise<{id: number; at: string; channel: string; kind: string; to: string; ok: boolean; error: string}[]>;
+export function orderCreatedText(o: {name: string; orderId: string; product: string; qty: unknown; mode: string; username: string; password: string; base: string}): string;
+export function statusNotices(prev: any, next: any, base?: string): {contact: {phone: string; email: string}; kind: string; subject: string; text: string; notice: Notice}[];
+export function notifyStatusChanges(prev: any, next: any): Promise<void>;
