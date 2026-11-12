@@ -1,0 +1,13 @@
+node_modules
+.next
+.vinext
+dist
+.git
+.env*
+!.env.docker.example
+storage
+outputs
+.wrangler
+.sites-runtime
+.openai
+tsconfig.tsbuildinfo

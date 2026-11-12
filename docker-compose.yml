@@ -1,0 +1,78 @@
+# Printora lengkap: aplikasi + MySQL + WAHA (WhatsApp). Jalankan:
+#   cp .env.docker.example .env.docker   (lalu isi kata sandi)
+#   docker compose --env-file .env.docker up -d --build
+# Port hanya dibuka ke komputer ini (127.0.0.1). Untuk LAN ubah "127.0.0.1:8787:8787" menjadi "8787:8787".
+name: printora
+
+services:
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?isi DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: printora
+      MYSQL_USER: printora_app
+      MYSQL_PASSWORD: ${DB_PASSWORD:?isi DB_PASSWORD}
+    volumes:
+      - printora-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db: {condition: service_healthy}
+    environment:
+      MYSQL_HOST: db
+      MYSQL_DATABASE: printora
+      MYSQL_USER: printora_app
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?isi ADMIN_PASSWORD}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-500}
+      PUBLIC_URL: ${PUBLIC_URL:-}
+      # Kunci enkripsi rahasia pengaturan (kata sandi SMTP, kunci WAHA). WAJIB tetap sama antar-pembangunan ulang;
+      # bila berganti, rahasia tersimpan tidak terbaca dan harus diisi ulang.
+      SETTINGS_KEY: ${SETTINGS_KEY:?isi SETTINGS_KEY}
+      # QRIS simulasi mati kecuali diisi 1 (hanya demo); QRIS dikonfirmasi FO.
+      ENABLE_DEMO_PAY: ${ENABLE_DEMO_PAY:-0}
+    volumes:
+      - printora-uploads:/data/uploads
+    ports:
+      - "127.0.0.1:8787:8787"
+
+  waha:
+    image: devlikeapro/waha
+    restart: unless-stopped
+    environment:
+      WAHA_API_KEY: ${WAHA_API_KEY:?isi WAHA_API_KEY}
+      WAHA_DASHBOARD_USERNAME: admin
+      WAHA_DASHBOARD_PASSWORD: ${WAHA_DASHBOARD_PASSWORD:?isi WAHA_DASHBOARD_PASSWORD}
+      WHATSAPP_SWAGGER_USERNAME: admin
+      WHATSAPP_SWAGGER_PASSWORD: ${WAHA_DASHBOARD_PASSWORD}
+      WHATSAPP_RESTART_ALL_SESSIONS: "True"
+      # NOWEB tanpa peramban: jauh lebih stabil daripada WEBJS (yang sering "page closed" dan ack ERROR)
+      WHATSAPP_DEFAULT_ENGINE: NOWEB
+    volumes:
+      - waha-sessions:/app/.sessions
+    ports:
+      - "127.0.0.1:3000:3000"   # dasbor untuk memindai QR; tidak perlu dibuka ke internet
+
+  # Quick Tunnel Cloudflare (alamat acak *.trycloudflare.com, tanpa akun). Hanya jalan dengan:
+  #   docker compose --env-file .env.docker --profile tunnel up -d tunnel
+  # lalu lihat alamatnya: docker compose --env-file .env.docker logs tunnel
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    profiles: ["tunnel"]
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --url http://app:8787
+    depends_on: [app]
+
+volumes:
+  printora-db:
+  printora-uploads:
+  waha-sessions:
