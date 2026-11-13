@@ -1,0 +1,83 @@
+--- pesanan-baru ---
+*Printora* | Pesanan Anda kami terima
+
+Halo *Alya Putri*, terima kasih, pesanan Anda di Printora sudah masuk dan menunggu verifikasi.
+
+*RPT-1012* - Banner & Spanduk
+
+Jumlah: *2 pcs*
+Pengerjaan: *Desain dulu oleh Tim Desain*
+
+Akses masuk Ruang Kerja:
+Username: alya9597
+Kata sandi sementara: xk3p9Tq2Lm
+_Ganti kata sandi saat pertama masuk. Jangan bagikan pesan ini._
+
+Detail di Ruang Kerja: https://contoh.trycloudflare.com/operasional
+
+_Pesan otomatis dari Printora._
+
+--- desain-siap ---
+*Printora* | Desain siap ditinjau
+
+Halo *Alya Putri*, berikut pembaruan pesanan Anda.
+
+*RPT-1012* - Banner & Spanduk
+
+- Desain versi 1 siap Anda tinjau. Silakan setujui atau minta revisi di Ruang Kerja.
+
+Berkas tersedia di Ruang Kerja:
+- desain-v1.png
+
+Detail di Ruang Kerja: https://contoh.trycloudflare.com/operasional
+
+_Pesan otomatis dari Printora._
+
+--- pembayaran ---
+*Printora* | Pembayaran diterima
+
+Halo *Alya Putri*, berikut pembaruan pesanan Anda.
+
+*RPT-1012* - Banner & Spanduk
+
+- Pembayaran Rp50.000 (Transfer) kami terima. Sisa tagihan Rp100.000. Kwitansi dapat dicetak dari tab Pembayaran di Ruang Kerja.
+
+No. kwitansi: *KW-RPT-1012-01*
+Dibayar: *Rp50.000*
+Metode: *Transfer*
+Sisa tagihan: *Rp100.000*
+
+Detail di Ruang Kerja: https://contoh.trycloudflare.com/operasional
+
+_Pesan otomatis dari Printora._
+
+--- berkas-fo ---
+*Printora* | Berkas dari pelanggan
+
+Halo *Front Office*, pelanggan Alya Putri mengirim berkas untuk pesanan ini.
+
+*RPT-1012* - Banner & Spanduk
+
+- Berkas pendukung untuk Tim Desain.
+
+Berkas tersedia di Ruang Kerja:
+- berkas-pelanggan.png
+
+Detail di Ruang Kerja: https://contoh.trycloudflare.com/operasional
+
+_Pesan otomatis dari Printora._
+
+--- siap-diambil ---
+*Printora* | Pesanan siap diambil
+
+Halo *Alya Putri*, berikut pembaruan pesanan Anda.
+
+*RPT-1012* - Banner & Spanduk
+
+- Pesanan siap diambil. Mohon lunasi sisa Rp100.000 saat pengambilan.
+
+Sisa tagihan: *Rp100.000*
+
+Detail di Ruang Kerja: https://contoh.trycloudflare.com/operasional
+
+_Pesan otomatis dari Printora._
