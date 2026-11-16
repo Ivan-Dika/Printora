@@ -1,6 +1,6 @@
 # Test Case dan Hasil QC End-to-End — Printora
 
-Tanggal pengujian: 9 Nov 2026 (uji ulang pada backend MySQL dengan login dan Admin Aplikasi; versi sebelumnya 6 Nov 2026 pada D1 tanpa login). Penguji: Claude (dijalankan atas instruksi koordinator). Skrip: `sites/rumah-printing-tajinan/scripts/test-e2e.mjs`.
+Tanggal pengujian: 9 Nov 2026 (uji ulang pada backend MySQL dengan login dan Admin Aplikasi; versi sebelumnya 6 Nov 2026 pada D1 tanpa login). Penguji: Claude (dijalankan atas instruksi koordinator). Skrip: `sites/printora/scripts/test-e2e.mjs`.
 
 ## 1. Lingkup dan lingkungan
 - Objek: prototipe pada pohon kerja lokal (belum di-commit), dibangun dengan `npm run build` dan dijalankan dengan `npm start` (server Node/vinext, MySQL 8.4 di Docker, basis data `printora`, berkas di `storage/uploads`) di `http://127.0.0.1:8787`.

@@ -2,7 +2,7 @@
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React-19-20232A?logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss&logoColor=white) ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-komponen-000000?logo=shadcnui&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-22%2B-339933?logo=nodedotjs&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-8.4-4479A1?logo=mysql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white) ![WhatsApp](https://img.shields.io/badge/WhatsApp-WAHA-25D366?logo=whatsapp&logoColor=white) ![Email](https://img.shields.io/badge/Email-Nodemailer-EA4335?logo=gmail&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-Tunnel-F38020?logo=cloudflare&logoColor=white) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Sistem alur pesanan percetakan berbasis web (studi kasus Rumah Printing Tajinan, mata kuliah Rekayasa Perangkat Lunak, Kelompok 2). Pelanggan, Front Office, Tim Desain, Operator, dan Admin bekerja dalam satu nomor pesanan: pesan, desain atau berkas siap cetak, pembayaran (DP dan pelunasan, dengan kwitansi), produksi, hingga pengambilan. Pemberitahuan dikirim lewat WhatsApp dan email di tiap tahap.
+Sistem alur pesanan percetakan berbasis web (studi kasus usaha percetakan lokal, mata kuliah Rekayasa Perangkat Lunak, Kelompok 2). Pelanggan, Front Office, Tim Desain, Operator, dan Admin bekerja dalam satu nomor pesanan: pesan, desain atau berkas siap cetak, pembayaran (DP dan pelunasan, dengan kwitansi), produksi, hingga pengambilan. Pemberitahuan dikirim lewat WhatsApp dan email di tiap tahap.
 
 ## Fitur
 
@@ -93,3 +93,7 @@ Ganti semua sandi contoh, set `ENABLE_DEMO_PAY=0` (QRIS simulasi), jangan membuk
 ## Tim
 
 Andika Setiawan (252011001) dan Ivan Dika Pratama (252011082). Dosen pengampu: Fadhli Almu'iini Ahda, S.Kom., M.Kom.
+
+## Catatan penamaan
+
+Pada tahap awal proyek (Okt 2026) sistem ini memakai nama usaha studi kasus. Pada 9 Nov 2026 namanya diubah menjadi **Printora** karena sistem dibuat umum untuk usaha percetakan mana pun, repository publik tidak ditujukan pada satu tempat usaha, dan untuk menghindari persoalan kredit atau izin penggunaan nama usaha. Nama usaha itu tidak dipakai lagi di kode maupun dokumen.

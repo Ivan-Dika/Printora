@@ -1,5 +1,5 @@
 # Deploy Docker
-Berkas di `sites/rumah-printing-tajinan/`: `Dockerfile`, `.dockerignore`, `docker-compose.yml` (db MySQL 8.4 + app + WAHA), `.env.docker.example`.
+Berkas di `sites/printora/`: `Dockerfile`, `.dockerignore`, `docker-compose.yml` (db MySQL 8.4 + app + WAHA), `.env.docker.example`.
 Pakai: `cp .env.docker.example .env.docker` (isi sandi) lalu `docker compose --env-file .env.docker up -d --build`. Port hanya 127.0.0.1 (app 8787, WAHA 3000).
 
 ## Status (2026-11-13)

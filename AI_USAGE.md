@@ -1,4 +1,4 @@
-# AI_USAGE — Penggunaan AI pada Proyek Printora (studi kasus Rumah Printing Tajinan)
+# AI_USAGE — Penggunaan AI pada Proyek Printora
 
 Dokumen ini menyatakan secara terbuka bagian proyek yang dikerjakan dengan bantuan AI. Pernyataan lingkup berasal dari koordinator (Ivan Dika Pratama): seluruh isi proyek dikerjakan dengan bantuan **ChatGPT**, kecuali perubahan yang tercatat pada bagian Claude di bawah.
 
@@ -16,7 +16,7 @@ Pengambilan keputusan, pemberian informasi domain, dan tanggung jawab akhir teta
 Cakupan: seluruh isi proyek sebelum sesi Claude, yaitu:
 
 - Penyusunan struktur dan isi **Laporan Awal** (tanggal dokumen 23 Okt 2026) dan struktur diagram awal (23 Okt 2026).
-- **Prototipe** aplikasi web (pembuatan awal 16 Okt 2026 menurut keterangan koordinator): V1 ruang operasional, V2 etalase layanan cetak dan ruang staf, paket portabel Windows, serta kode sumber di `sites/rumah-printing-tajinan` (tiga commit tertanggal 2 Nov 2026).
+- **Prototipe** aplikasi web (pembuatan awal 16 Okt 2026 menurut keterangan koordinator): V1 ruang operasional, V2 etalase layanan cetak dan ruang staf, paket portabel Windows, serta kode sumber di `sites/printora` (tiga commit tertanggal 2 Nov 2026).
 - Berkas diagram awal (StarUML `.mdj` dan gambar): use case, class, activity, sequence, serta diagram arsitektur.
 - Dokumen pendukung di `outputs/`, antara lain Aktor dan Menu Sistem serta Ringkasan Progres.
 
@@ -27,7 +27,7 @@ Rincian per berkas ChatGPT tidak diaudit ulang oleh Claude; pernyataan di atas m
 Cakupan: pekerjaan pada sesi 6 Nov 2026, dijalankan atas instruksi koordinator.
 
 ### 2.1 Laporan proyek
-- Menyusun **Laporan Proyek RPL — Rumah Printing Tajinan** (`outputs/Laporan_Proyek_RPL_Rumah_Printing_Tajinan.docx` dan `.pdf`, 44 halaman) mengikuti format dan desain laporan referensi SIMAKA Lite, dengan isi sendiri bersumber dari Laporan Awal dan artefak proyek.
+- Menyusun **Laporan Proyek RPL — Printora** (`outputs/Laporan_Proyek_RPL_Printora.docx` dan `.pdf`, 44 halaman) mengikuti format dan desain laporan referensi SIMAKA Lite, dengan isi sendiri bersumber dari Laporan Awal dan artefak proyek.
 - Skrip pembangun laporan: `work/build_report.py` dan `work/build_report_lib.py`.
 - Aturan yang diikuti: tidak ada rapat, wawancara, uji, tanggal, atau capaian karangan; metodologi ditulis sebagai Waterfall yang disesuaikan dengan prototipe; hal yang belum pasti ditandai «Perlu dikonfirmasi».
 
@@ -44,7 +44,7 @@ Cakupan: pekerjaan pada sesi 6 Nov 2026, dijalankan atas instruksi koordinator.
 - Memeriksa kesesuaian keputusan, diagram, kode prototipe, dan uji (Tabel 5.2 laporan). Delapan aturan inti selaras; tiga fitur Ketetapan 30 Okt 2026 belum ada pada prototipe (kemudian ditambahkan, lihat 2.4).
 
 ### 2.4 Perubahan kode prototipe (6 Nov 2026)
-Berkas: `lib/domain.ts`, `app/operasional/page.tsx`, `scripts/test-domain.mjs` di `sites/rumah-printing-tajinan`.
+Berkas: `lib/domain.ts`, `app/operasional/page.tsx`, `scripts/test-domain.mjs` di `sites/printora`.
 - Unggah berkas pendukung oleh pelanggan pada Buat Pesanan.
 - Tiga tab Produksi (Antrean, Sedang Dikerjakan, Selesai Produksi) dan pencatatan kendala oleh Operator.
 - Pencatatan pemberitahuan ke pelanggan pada Penyerahan (tanpa pengiriman otomatis).
@@ -54,7 +54,7 @@ Berkas: `lib/domain.ts`, `app/operasional/page.tsx`, `scripts/test-domain.mjs` d
 ### 2.5 Merek, gaya, dan panduan alur prototipe (9 Nov 2026)
 - Nama aplikasi **Printora** dan palet hitam #171717, oranye #FF8500, putih #FFFFFF ditetapkan oleh koordinator; Claude menerapkannya pada `app/globals.css`, `app/storefront.css`, logo, dan favicon.
 - Menu **Panduan** per peran, alur enam fase dengan jumlah pesanan, banner «Giliran» pada detail pesanan, dan pelacak tahap untuk pengunjung (`lib/flow.ts`, `components/printora.tsx`).
-- Nama pada laporan dan diagram diganti menjadi Printora; Rumah Printing Tajinan tetap disebut sebagai studi kasus. Nama berkas keluaran belum diubah.
+- Nama proyek diubah dari nama usaha studi kasus menjadi Printora pada 9 Nov 2026 (sistem dibuat umum, repository publik tidak terfokus pada satu tempat, dan menghindari persoalan kredit atau izin penggunaan nama usaha). Lihat Bab 1 laporan.
 - Uji ulang: API 70/70 dan UI 27/27 lulus. Belum di-commit.
 
 ### 2.6 Backend MySQL dan unggah 500 MB (9 Nov 2026)

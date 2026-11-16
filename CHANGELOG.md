@@ -9,20 +9,20 @@ Catatan perubahan, terbaru di bawah per bagian tanggal. Disalin dari catatan ker
 - 2026-11-06: sequence revisi 3 + audit silang; laporan 44 hlm; D-06 dicatat
 
 ## 2026-11-06 — D-06 ditutup (fitur Ketetapan 30 Okt dilengkapi di prototipe)
-- sites/rumah-printing-tajinan (BELUM di-commit): lib/domain.ts (attachments/issues/notifications; aksi `issue`, `notify`; `create` menerima berkas), app/operasional/page.tsx (tab Produksi 3, catatan kendala, unggah berkas di Buat Pesanan, catat pemberitahuan), scripts/test-domain.mjs (TC-22..24). tsc bersih, test-domain/api/storefront lulus, build berhasil, UI diperiksa di peramban.
+- sites/printora (BELUM di-commit): lib/domain.ts (attachments/issues/notifications; aksi `issue`, `notify`; `create` menerima berkas), app/operasional/page.tsx (tab Produksi 3, catatan kendala, unggah berkas di Buat Pesanan, catat pemberitahuan), scripts/test-domain.mjs (TC-22..24). tsc bersih, test-domain/api/storefront lulus, build berhasil, UI diperiksa di peramban.
 - Diagram: class (berkasPendukung, catatanKendala, pemberitahuan) dan SD-04/05 diperbarui; laporan dibangun ulang (44 hlm).
 - Catatan: lint punya error lama (any, ref di storefront), bukan dari perubahan ini. Paket portabel/Netlify belum dibangun ulang.
 
 ## 2026-11-06 (malam) — QC end-to-end
-- Tambah sites/.../scripts/test-e2e.mjs (70 kasus: 23 positif, 47 negatif, 4 aktor). Hasil 70/70 lulus pada server lokal (percobaan 1: N-45 gagal karena ekspektasi skrip, diperbaiki). Dokumen: outputs/Test_Case_E2E_Rumah_Printing_Tajinan.md. Belum di-commit; belum masuk laporan.
+- Tambah sites/.../scripts/test-e2e.mjs (70 kasus: 23 positif, 47 negatif, 4 aktor). Hasil 70/70 lulus pada server lokal (percobaan 1: N-45 gagal karena ekspektasi skrip, diperbaiki). Dokumen: outputs/Test_Case_E2E_Printora.md. Belum di-commit; belum masuk laporan.
 
 ## 2026-11-06 (malam 2) — Test case alur lengkap + dokumentasi UI
-- work/e2e_ui.mjs (Chrome headless + CDP): 27 langkah UI lulus, 27 tangkapan layar di work/e2e_shots/. Dokumen: outputs/Test_Case_Alur_Lengkap_Rumah_Printing_Tajinan.docx (dibangun work/build_testcase_doc.py). Kegagalan awal karena skrip (window.status bentrok), bukan aplikasi.
+- work/e2e_ui.mjs (Chrome headless + CDP): 27 langkah UI lulus, 27 tangkapan layar di work/e2e_shots/. Dokumen: outputs/Test_Case_Alur_Lengkap_Printora.docx (dibangun work/build_testcase_doc.py). Kegagalan awal karena skrip (window.status bentrok), bukan aplikasi.
 
 ## 2026-11-09 — Rebrand Printora + panduan/alur
-- Keputusan koordinator: nama Printora, palet #171717/#FF8500/#FFFFFF, aplikasi percetakan umum (Tajinan hanya studi kasus). Prototipe (belum di-commit): app/globals.css & storefront.css (dibangun ulang oleh work/rebrand_css.py dari cadangan work/backup/css_before_printora/), lib/flow.ts, components/printora.tsx, app/page.tsx, app/operasional/page.tsx, layout.tsx, favicon, README-PROTOTIPE.
+- Keputusan koordinator: nama Printora, palet #171717/#FF8500/#FFFFFF, aplikasi percetakan umum (nama usaha studi kasus tidak lagi dipakai: sistem dibuat umum dan menghindari persoalan izin nama). Prototipe (belum di-commit): app/globals.css & storefront.css (dibangun ulang oleh work/rebrand_css.py dari cadangan work/backup/css_before_printora/), lib/flow.ts, components/printora.tsx, app/page.tsx, app/operasional/page.tsx, layout.tsx, favicon, README-PROTOTIPE.
 - Fitur: menu Panduan per peran, Pipeline 6 fase di Beranda, banner Giliran di detail, tracker + langkah berikutnya untuk pengunjung, FAQ.
-- Laporan 45 hlm (CR-04, CR-05, AI-04); diagram/C4 diganti nama tampilan; nama berkas keluaran (Rumah_Printing_Tajinan_*) BELUM diganti; folder sites/rumah-printing-tajinan belum diganti.
+- Laporan 45 hlm (CR-04, CR-05, AI-04); diagram/C4 diganti nama tampilan; nama berkas keluaran (Printora_*) BELUM diganti; folder sites/printora belum diganti.
 - Uji ulang: API 70/70, UI 27/27, test-domain lulus, tsc bersih, build OK. Test case docx dibangun ulang dengan tangkapan layar baru. Belum diuji: situs publik, paket portabel, Netlify.
 
 ## 2026-11-09 (sore) — Logo/favicon sebagai aset
@@ -56,7 +56,7 @@ Catatan perubahan, terbaru di bawah per bagian tanggal. Disalin dari catatan ker
 
 ## 2026-11-12 - Keputusan QRIS dan akun uji
 - Pengguna memutuskan alur QRIS tetap seperti sekarang (QR, pindai langsung sukses, polling otomatis); temuan review keamanan dicatat sebagai risiko yang diterima. Situs diperlakukan sebagai sungguhan.
-- Akun uji per peran dibuat (work/make_test_accounts.mjs): fo1, desain1, operator1, pelanggan1; kata sandi di sites/rumah-printing-tajinan/.env.testaccounts (gitignored). Admin: ADMIN_USERNAME/ADMIN_PASSWORD di .env.
+- Akun uji per peran dibuat (work/make_test_accounts.mjs): fo1, desain1, operator1, pelanggan1; kata sandi di sites/printora/.env.testaccounts (gitignored). Admin: ADMIN_USERNAME/ADMIN_PASSWORD di .env.
 
 ## 2026-11-12 (2) - Revisi tampilan: palet biru, logo final, shadcn, loader
 - Logo final dipotong dari logo horizontal (public/brand/logo-mark.png, logo-full.png, favicon.png); work/make_logo.py. Palet biru #007BFF + aksen CMYK/hijau/teal, token shadcn di globals.css (CSS lama dibungkus @layer components agar utilitas shadcn menang).
@@ -117,7 +117,7 @@ Catatan perubahan, terbaru di bawah per bagian tanggal. Disalin dari catatan ker
 
 (16) Docker deploy dicoba ulang dan berhasil untuk app+db (lihat claude/notes/deploy-docker.md). Perbaikan: Dockerfile tanpa npm prune dan CMD memakai vinext lokal; QRIS simulasi diberi saklar `ENABLE_DEMO_PAY` (temuan keamanan payment bypass): bila 0, `/api/bayar/demo` POST 403, halaman /bayar tanpa tombol bayar, FO dapat mengonfirmasi QRIS (`lib/pay.ts`, `components/pay.tsx`, `app/bayar/[id]/page.tsx`); compose default 0. Tes E2E mendukung `MOCK_HOST`. Terhadap kontainer: API 151/151, UI 46/46. Belum di-commit.
 
-(17) Stack Docker dijalankan untuk user (nama proyek compose `printora`; kontainer printora-db-1, printora-app-1, printora-waha-1). `.env.docker` berisi sandi acak (tidak di-commit, di folder sites/rumah-printing-tajinan). Compose diberi `name: printora`.
+(17) Stack Docker dijalankan untuk user (nama proyek compose `printora`; kontainer printora-db-1, printora-app-1, printora-waha-1). `.env.docker` berisi sandi acak (tidak di-commit, di folder sites/printora). Compose diberi `name: printora`.
 
 (18) Temuan keamanan 2: `demoPayEnabled` (lib/pay.ts) kini fail-closed: QRIS simulasi hanya menyala bila ENABLE_DEMO_PAY=1 eksplisit (sebelumnya menyala kecuali =0). `.env` lokal diberi ENABLE_DEMO_PAY=1 agar demo lokal tetap jalan; compose default 0. API 151/151 dengan flag=1; tanpa flag endpoint demo 403.
 
