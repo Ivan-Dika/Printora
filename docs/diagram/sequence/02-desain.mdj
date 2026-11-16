@@ -1,356 +1,326 @@
 {
   "_type": "Project",
-  "_id": "229fefaf8973422b924a3e11ff5f12f5",
+  "_id": "2e91a8d744e845daa9e4fd56ba2b4f8a",
   "name": "Desain dan Persetujuan",
   "ownedElements": [
     {
       "_type": "UMLActor",
-      "_id": "1ead42e788bf43af8de929c4b1f97d91",
+      "_id": "74598525546742228f3a521901e83d0c",
       "name": "Pelanggan",
       "attributes": [
         {
           "_type": "UMLAttribute",
-          "_id": "5dd6d0864d70416fbed0e57887a79cfb",
+          "_id": "e48793fb2c9e463c884f1871b9247406",
           "name": "Pelanggan",
           "type": {
-            "$ref": "1ead42e788bf43af8de929c4b1f97d91"
+            "$ref": "74598525546742228f3a521901e83d0c"
           },
           "_parent": {
-            "$ref": "1ead42e788bf43af8de929c4b1f97d91"
+            "$ref": "74598525546742228f3a521901e83d0c"
           }
         }
       ],
       "_parent": {
-        "$ref": "229fefaf8973422b924a3e11ff5f12f5"
+        "$ref": "2e91a8d744e845daa9e4fd56ba2b4f8a"
       }
     },
     {
       "_type": "UMLActor",
-      "_id": "18b89250fb2f472d9c6d040d2b728740",
+      "_id": "c53c5dd1feb5411b8b1c686ecb097a58",
       "name": "Tim Desain",
       "attributes": [
         {
           "_type": "UMLAttribute",
-          "_id": "446b4711128a4a92b392bc8a64ee2423",
+          "_id": "d56449b0284e41c5a12db810404df39e",
           "name": "Tim Desain",
           "type": {
-            "$ref": "18b89250fb2f472d9c6d040d2b728740"
+            "$ref": "c53c5dd1feb5411b8b1c686ecb097a58"
           },
           "_parent": {
-            "$ref": "18b89250fb2f472d9c6d040d2b728740"
+            "$ref": "c53c5dd1feb5411b8b1c686ecb097a58"
           }
         }
       ],
       "_parent": {
-        "$ref": "229fefaf8973422b924a3e11ff5f12f5"
+        "$ref": "2e91a8d744e845daa9e4fd56ba2b4f8a"
       }
     },
     {
       "_type": "UMLInteraction",
-      "_id": "25e2bd9a15024053bc29eadff494115a",
+      "_id": "1e4722eaf10746af879a0d3c13cd66cc",
       "name": "Desain dan Persetujuan",
       "participants": [
         {
           "_type": "UMLLifeline",
-          "_id": "de0f28fa1a3f46b7ab395d528af9baba",
+          "_id": "b895c7bab20b4b6aa1e1400dedf1046f",
           "name": "Pelanggan",
           "isMultiInstance": false,
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           },
           "represent": {
-            "$ref": "5dd6d0864d70416fbed0e57887a79cfb"
+            "$ref": "e48793fb2c9e463c884f1871b9247406"
           }
         },
         {
           "_type": "UMLLifeline",
-          "_id": "3102fb631c4b4cc0a36bf451241a68d8",
+          "_id": "0ff5bb7918a945f99f456bcbbbde885b",
           "name": "Tim Desain",
           "isMultiInstance": false,
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           },
           "represent": {
-            "$ref": "446b4711128a4a92b392bc8a64ee2423"
+            "$ref": "d56449b0284e41c5a12db810404df39e"
           }
         },
         {
           "_type": "UMLLifeline",
-          "_id": "145d989a397a426996548724349ac3fc",
+          "_id": "0630f94eaca14ca5994db16c045b33a8",
           "name": "Sistem",
           "isMultiInstance": false,
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLLifeline",
-          "_id": "ade59037dc284ad094b1ea3bec8c5c97",
-          "name": "versi: Desain",
+          "_id": "d99eb53b9f974a1db3c3432ad6663ce7",
+          "name": "Layanan Pesan",
           "isMultiInstance": false,
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         }
       ],
       "messages": [
         {
           "_type": "UMLMessage",
-          "_id": "d3eaa8f5b1da4d779f1947a92707f929",
+          "_id": "483df98849db4e4e87bdc89d4916c274",
           "name": "Mengunggah versi desain",
           "source": {
-            "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+            "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
           },
           "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "e06df4f9f0114206bd7448b75244e07f",
-          "name": "Menyimpan versi desain",
+          "_id": "78b102164c964333804309eeacff700c",
+          "name": "Menyimpan versi; kirim pemberitahuan desain siap ditinjau",
           "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "target": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+            "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "46144bc9986a421894d7eab7d8bbc533",
+          "_id": "b19d039880594d73964727b8a609a011",
+          "name": "Menerima WhatsApp dan email: desain siap",
+          "source": {
+            "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
+          },
+          "target": {
+            "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
+          },
+          "messageSort": "synchCall",
+          "_parent": {
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
+          }
+        },
+        {
+          "_type": "UMLMessage",
+          "_id": "6955054802cc4f4d85578e00ea0b90c8",
           "name": "Membuka desain pesanan",
           "source": {
-            "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+            "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
           },
           "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "c271ecbe2a584a949434f0a59a222d0f",
-          "name": "Mengambil versi terbaru",
+          "_id": "d4b92ced913843fe9e2189b1337009a7",
+          "name": "Menampilkan berkas desain versi terbaru",
           "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "target": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
-          },
-          "messageSort": "synchCall",
-          "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
-          }
-        },
-        {
-          "_type": "UMLMessage",
-          "_id": "bc04edb4981d44cca9560a41acf09572",
-          "name": "Mengembalikan berkas desain",
-          "source": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
-          },
-          "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
           },
           "messageSort": "reply",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "b68f2733ba694b55b1206d3bd3bb8332",
-          "name": "Menampilkan desain",
-          "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
-          },
-          "target": {
-            "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
-          },
-          "messageSort": "reply",
-          "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
-          }
-        },
-        {
-          "_type": "UMLMessage",
-          "_id": "96544f44f09d4d07a0451f82d41062b3",
+          "_id": "9bd53635cf0847ffb226b33ecc614f7c",
           "name": "Menyetujui desain",
           "source": {
-            "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+            "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
           },
           "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "4ee34c48d1474d96b551831470db0a2a",
-          "name": "Mencatat persetujuan pelanggan",
+          "_id": "23a86dc1bf72471da5f1a11aa01d9516",
+          "name": "Mencatat persetujuan; kirim pemberitahuan ke Tim Desain",
           "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "target": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+            "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "2253aacf339d4069a1c6319272b403ee",
+          "_id": "3f078bffc86b457285a7fe566204f700",
           "name": "Menetapkan desain yang disetujui sebagai final",
           "source": {
-            "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+            "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
           },
           "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "f54247c937d8439586081f0813b70438",
-          "name": "Menetapkan versi final",
-          "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
-          },
-          "target": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
-          },
-          "messageSort": "synchCall",
-          "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
-          }
-        },
-        {
-          "_type": "UMLMessage",
-          "_id": "e69aba54baf44df898d476776696b146",
+          "_id": "a5084ee101584e06b57d277d792af1d7",
           "name": "Mengirim catatan revisi",
           "source": {
-            "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+            "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
           },
           "target": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "c6f4fe0b65454599a3d027e3efb80d95",
-          "name": "Menyimpan catatan revisi",
+          "_id": "35b9e63545d84be5b47ae135fdeb7a22",
+          "name": "Menyimpan catatan; kirim pemberitahuan ke Tim Desain",
           "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "target": {
-            "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+            "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
           },
           "messageSort": "synchCall",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         },
         {
           "_type": "UMLMessage",
-          "_id": "b33892a5ee184067a5f00d4dd44bf666",
+          "_id": "559a9812aad24d40b6f0bf4bf91d3995",
           "name": "Menampilkan catatan revisi; Tim Desain mengunggah versi baru",
           "source": {
-            "$ref": "145d989a397a426996548724349ac3fc"
+            "$ref": "0630f94eaca14ca5994db16c045b33a8"
           },
           "target": {
-            "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+            "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
           },
           "messageSort": "reply",
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         }
       ],
       "fragments": [
         {
           "_type": "UMLCombinedFragment",
-          "_id": "a76a13ac61304f85a89df4f8bf407e74",
+          "_id": "3b655bb4d993447791024d8774be5e8f",
           "interactionOperator": "alt",
           "operands": [
             {
               "_type": "UMLInteractionOperand",
-              "_id": "8f2c385f17f44825a02dc3f98ff10bb0",
+              "_id": "93206de87b5f4a88bf3071496664b168",
               "name": "Operand1",
               "guard": "pelanggan menyetujui",
               "_parent": {
-                "$ref": "a76a13ac61304f85a89df4f8bf407e74"
+                "$ref": "3b655bb4d993447791024d8774be5e8f"
               }
             },
             {
               "_type": "UMLInteractionOperand",
-              "_id": "7d3b12d339424afbb32d164073b5e9fa",
+              "_id": "3889a4e78bca48ab9cc191e88ff542e5",
               "name": "Operand2",
               "guard": "pelanggan meminta revisi (sebelum disetujui)",
               "_parent": {
-                "$ref": "a76a13ac61304f85a89df4f8bf407e74"
+                "$ref": "3b655bb4d993447791024d8774be5e8f"
               }
             }
           ],
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         }
       ],
       "ownedElements": [
         {
           "_type": "UMLSequenceDiagram",
-          "_id": "588d84356b27454faeb39073f9a2f504",
+          "_id": "3c1a8c54bba14495b310d60b9a94d03f",
           "name": "Desain dan Persetujuan",
           "ownedViews": [
             {
               "_type": "UMLSeqLifelineView",
-              "_id": "f1313422e45b4f52a9575a94f0e10ca1",
+              "_id": "aef2a4e3a6874055ad3726b28b9968e9",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+                "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
               },
               "subViews": [
                 {
                   "_type": "UMLNameCompartmentView",
-                  "_id": "243f598f61a047b685aae5ac4b2d8ef0",
+                  "_id": "bb795c813b91493e90fe7eef8f578c46",
                   "_parent": {
-                    "$ref": "f1313422e45b4f52a9575a94f0e10ca1"
+                    "$ref": "aef2a4e3a6874055ad3726b28b9968e9"
                   },
                   "model": {
-                    "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+                    "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
                   },
                   "subViews": [
                     {
                       "_type": "LabelView",
-                      "_id": "0734bb4bf90b488697fea7a7f4a27f60",
+                      "_id": "4fb2dd3b9f1146c79bf9eed1189a3af0",
                       "_parent": {
-                        "$ref": "243f598f61a047b685aae5ac4b2d8ef0"
+                        "$ref": "bb795c813b91493e90fe7eef8f578c46"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -360,9 +330,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "c2e3e8d18fef45c490690c9419d591cb",
+                      "_id": "f6af255e23be4dff882959578a27662b",
                       "_parent": {
-                        "$ref": "243f598f61a047b685aae5ac4b2d8ef0"
+                        "$ref": "bb795c813b91493e90fe7eef8f578c46"
                       },
                       "font": "Arial;14;1",
                       "left": 60,
@@ -373,9 +343,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "dfa399d0b1534f1fbad8254b9d591a14",
+                      "_id": "c0bcfa803fea41d5bccd8d18ede22e9f",
                       "_parent": {
-                        "$ref": "243f598f61a047b685aae5ac4b2d8ef0"
+                        "$ref": "bb795c813b91493e90fe7eef8f578c46"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -387,9 +357,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "f5912ab0122f4b2f9f12f40da3986fec",
+                      "_id": "5251556ce83d4fd6a24937744b9e119e",
                       "_parent": {
-                        "$ref": "243f598f61a047b685aae5ac4b2d8ef0"
+                        "$ref": "bb795c813b91493e90fe7eef8f578c46"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -405,71 +375,71 @@
                   "width": 230,
                   "height": 90,
                   "stereotypeLabel": {
-                    "$ref": "0734bb4bf90b488697fea7a7f4a27f60"
+                    "$ref": "4fb2dd3b9f1146c79bf9eed1189a3af0"
                   },
                   "nameLabel": {
-                    "$ref": "c2e3e8d18fef45c490690c9419d591cb"
+                    "$ref": "f6af255e23be4dff882959578a27662b"
                   },
                   "namespaceLabel": {
-                    "$ref": "dfa399d0b1534f1fbad8254b9d591a14"
+                    "$ref": "c0bcfa803fea41d5bccd8d18ede22e9f"
                   },
                   "propertyLabel": {
-                    "$ref": "f5912ab0122f4b2f9f12f40da3986fec"
+                    "$ref": "5251556ce83d4fd6a24937744b9e119e"
                   }
                 },
                 {
                   "_type": "UMLLinePartView",
-                  "_id": "cb29cdfda10d49728a97b36e3a144289",
+                  "_id": "a7141c4d6c4643cc8fe23173e145f914",
                   "_parent": {
-                    "$ref": "f1313422e45b4f52a9575a94f0e10ca1"
+                    "$ref": "aef2a4e3a6874055ad3726b28b9968e9"
                   },
                   "model": {
-                    "$ref": "de0f28fa1a3f46b7ab395d528af9baba"
+                    "$ref": "b895c7bab20b4b6aa1e1400dedf1046f"
                   },
                   "font": "Arial;13;0",
                   "left": 170,
                   "top": 285,
                   "width": 1,
-                  "height": 1001
+                  "height": 877
                 }
               ],
               "font": "Arial;13;0",
               "left": 55,
               "top": 195,
               "width": 230,
-              "height": 1091,
+              "height": 967,
               "nameCompartment": {
-                "$ref": "243f598f61a047b685aae5ac4b2d8ef0"
+                "$ref": "bb795c813b91493e90fe7eef8f578c46"
               },
               "linePart": {
-                "$ref": "cb29cdfda10d49728a97b36e3a144289"
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
               }
             },
             {
               "_type": "UMLSeqLifelineView",
-              "_id": "29267e07d2b2466a8858867ddbe27504",
+              "_id": "4abdb68d023f4a6985db678334578dbc",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+                "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
               },
               "subViews": [
                 {
                   "_type": "UMLNameCompartmentView",
-                  "_id": "aaa62ef25db3418190d023da2f7779fa",
+                  "_id": "5f0ac513ad954a97b59c113b9fb30d45",
                   "_parent": {
-                    "$ref": "29267e07d2b2466a8858867ddbe27504"
+                    "$ref": "4abdb68d023f4a6985db678334578dbc"
                   },
                   "model": {
-                    "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+                    "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
                   },
                   "subViews": [
                     {
                       "_type": "LabelView",
-                      "_id": "61c8b0218aa1421997301203b1a14bba",
+                      "_id": "91a807f8f3d1410cb6331d05875255af",
                       "_parent": {
-                        "$ref": "aaa62ef25db3418190d023da2f7779fa"
+                        "$ref": "5f0ac513ad954a97b59c113b9fb30d45"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -479,9 +449,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "b8dcc6958303438c9efcdc440b8d887e",
+                      "_id": "ed017c7609ca40d4bdb81927536fe562",
                       "_parent": {
-                        "$ref": "aaa62ef25db3418190d023da2f7779fa"
+                        "$ref": "5f0ac513ad954a97b59c113b9fb30d45"
                       },
                       "font": "Arial;14;1",
                       "left": 370,
@@ -492,9 +462,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "822fa0c742254abaa0d3cd81d7b0f67d",
+                      "_id": "e1d6be6e6fbb44a2b0d03a8f2a35e06d",
                       "_parent": {
-                        "$ref": "aaa62ef25db3418190d023da2f7779fa"
+                        "$ref": "5f0ac513ad954a97b59c113b9fb30d45"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -506,9 +476,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "2cbd34785d8d4b1b9fb9a6b12fddc852",
+                      "_id": "77f6816d693e4387a18e0ec96b518ed6",
                       "_parent": {
-                        "$ref": "aaa62ef25db3418190d023da2f7779fa"
+                        "$ref": "5f0ac513ad954a97b59c113b9fb30d45"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -524,71 +494,71 @@
                   "width": 230,
                   "height": 90,
                   "stereotypeLabel": {
-                    "$ref": "61c8b0218aa1421997301203b1a14bba"
+                    "$ref": "91a807f8f3d1410cb6331d05875255af"
                   },
                   "nameLabel": {
-                    "$ref": "b8dcc6958303438c9efcdc440b8d887e"
+                    "$ref": "ed017c7609ca40d4bdb81927536fe562"
                   },
                   "namespaceLabel": {
-                    "$ref": "822fa0c742254abaa0d3cd81d7b0f67d"
+                    "$ref": "e1d6be6e6fbb44a2b0d03a8f2a35e06d"
                   },
                   "propertyLabel": {
-                    "$ref": "2cbd34785d8d4b1b9fb9a6b12fddc852"
+                    "$ref": "77f6816d693e4387a18e0ec96b518ed6"
                   }
                 },
                 {
                   "_type": "UMLLinePartView",
-                  "_id": "378fad88648f49a288b8891e0b715f62",
+                  "_id": "bde7124a96144bbb98225036206a8a84",
                   "_parent": {
-                    "$ref": "29267e07d2b2466a8858867ddbe27504"
+                    "$ref": "4abdb68d023f4a6985db678334578dbc"
                   },
                   "model": {
-                    "$ref": "3102fb631c4b4cc0a36bf451241a68d8"
+                    "$ref": "0ff5bb7918a945f99f456bcbbbde885b"
                   },
                   "font": "Arial;13;0",
                   "left": 480,
                   "top": 285,
                   "width": 1,
-                  "height": 1001
+                  "height": 877
                 }
               ],
               "font": "Arial;13;0",
               "left": 365,
               "top": 195,
               "width": 230,
-              "height": 1091,
+              "height": 967,
               "nameCompartment": {
-                "$ref": "aaa62ef25db3418190d023da2f7779fa"
+                "$ref": "5f0ac513ad954a97b59c113b9fb30d45"
               },
               "linePart": {
-                "$ref": "378fad88648f49a288b8891e0b715f62"
+                "$ref": "bde7124a96144bbb98225036206a8a84"
               }
             },
             {
               "_type": "UMLSeqLifelineView",
-              "_id": "bb85db17ead74f799c706473451ec9ac",
+              "_id": "8fc81e2f12eb46298f46959574ddec27",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "145d989a397a426996548724349ac3fc"
+                "$ref": "0630f94eaca14ca5994db16c045b33a8"
               },
               "subViews": [
                 {
                   "_type": "UMLNameCompartmentView",
-                  "_id": "d6b6022af35a433185c4e65f6ac61173",
+                  "_id": "bc3a1f1fe7f8412b81c7a9480bb28fd9",
                   "_parent": {
-                    "$ref": "bb85db17ead74f799c706473451ec9ac"
+                    "$ref": "8fc81e2f12eb46298f46959574ddec27"
                   },
                   "model": {
-                    "$ref": "145d989a397a426996548724349ac3fc"
+                    "$ref": "0630f94eaca14ca5994db16c045b33a8"
                   },
                   "subViews": [
                     {
                       "_type": "LabelView",
-                      "_id": "60fb2862632e4588b79547dffcfa6b3f",
+                      "_id": "232d6e237f9c423aaa9c67dc2b3fdef2",
                       "_parent": {
-                        "$ref": "d6b6022af35a433185c4e65f6ac61173"
+                        "$ref": "bc3a1f1fe7f8412b81c7a9480bb28fd9"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -598,9 +568,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "973d039024c54d1ab1fa59a21b0e92b2",
+                      "_id": "67691ad4c75e44209c6b1e0eaeda4f88",
                       "_parent": {
-                        "$ref": "d6b6022af35a433185c4e65f6ac61173"
+                        "$ref": "bc3a1f1fe7f8412b81c7a9480bb28fd9"
                       },
                       "font": "Arial;14;1",
                       "left": 680,
@@ -611,9 +581,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "1d384f0ce60042eebd5b52a311072fd3",
+                      "_id": "ba5f2650000244dc91a93296f9ceb070",
                       "_parent": {
-                        "$ref": "d6b6022af35a433185c4e65f6ac61173"
+                        "$ref": "bc3a1f1fe7f8412b81c7a9480bb28fd9"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -625,9 +595,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "982d13f7ce7f4497b3a2635d0f35efb6",
+                      "_id": "649fa7a076fd443cbd32ee8620c52648",
                       "_parent": {
-                        "$ref": "d6b6022af35a433185c4e65f6ac61173"
+                        "$ref": "bc3a1f1fe7f8412b81c7a9480bb28fd9"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -643,71 +613,71 @@
                   "width": 230,
                   "height": 45,
                   "stereotypeLabel": {
-                    "$ref": "60fb2862632e4588b79547dffcfa6b3f"
+                    "$ref": "232d6e237f9c423aaa9c67dc2b3fdef2"
                   },
                   "nameLabel": {
-                    "$ref": "973d039024c54d1ab1fa59a21b0e92b2"
+                    "$ref": "67691ad4c75e44209c6b1e0eaeda4f88"
                   },
                   "namespaceLabel": {
-                    "$ref": "1d384f0ce60042eebd5b52a311072fd3"
+                    "$ref": "ba5f2650000244dc91a93296f9ceb070"
                   },
                   "propertyLabel": {
-                    "$ref": "982d13f7ce7f4497b3a2635d0f35efb6"
+                    "$ref": "649fa7a076fd443cbd32ee8620c52648"
                   }
                 },
                 {
                   "_type": "UMLLinePartView",
-                  "_id": "f2c4fc3936e74d3eab4a2f1655cb5ac3",
+                  "_id": "9041fd379393430bb839f1ac81a319e1",
                   "_parent": {
-                    "$ref": "bb85db17ead74f799c706473451ec9ac"
+                    "$ref": "8fc81e2f12eb46298f46959574ddec27"
                   },
                   "model": {
-                    "$ref": "145d989a397a426996548724349ac3fc"
+                    "$ref": "0630f94eaca14ca5994db16c045b33a8"
                   },
                   "font": "Arial;13;0",
                   "left": 790,
                   "top": 240,
                   "width": 1,
-                  "height": 1046
+                  "height": 922
                 }
               ],
               "font": "Arial;13;0",
               "left": 675,
               "top": 195,
               "width": 230,
-              "height": 1091,
+              "height": 967,
               "nameCompartment": {
-                "$ref": "d6b6022af35a433185c4e65f6ac61173"
+                "$ref": "bc3a1f1fe7f8412b81c7a9480bb28fd9"
               },
               "linePart": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               }
             },
             {
               "_type": "UMLSeqLifelineView",
-              "_id": "98a5ae1fd4944d37bd18f1cf275f5089",
+              "_id": "30a892bb8a434450852c2b364d2e464f",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+                "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
               },
               "subViews": [
                 {
                   "_type": "UMLNameCompartmentView",
-                  "_id": "7ed97fb417c14795be99a8db18edc7a7",
+                  "_id": "6337ae20598a450393ec04df77763181",
                   "_parent": {
-                    "$ref": "98a5ae1fd4944d37bd18f1cf275f5089"
+                    "$ref": "30a892bb8a434450852c2b364d2e464f"
                   },
                   "model": {
-                    "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+                    "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
                   },
                   "subViews": [
                     {
                       "_type": "LabelView",
-                      "_id": "b742b79e5ace440eb384bfcf325256f1",
+                      "_id": "92406b8acbf043ce86e3f5973f8509f4",
                       "_parent": {
-                        "$ref": "7ed97fb417c14795be99a8db18edc7a7"
+                        "$ref": "6337ae20598a450393ec04df77763181"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -717,22 +687,22 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "775e3fd7a48a41e6a765fc2bef6e695a",
+                      "_id": "7b7b657447764fabb34ac7d02d2732f0",
                       "_parent": {
-                        "$ref": "7ed97fb417c14795be99a8db18edc7a7"
+                        "$ref": "6337ae20598a450393ec04df77763181"
                       },
                       "font": "Arial;14;1",
                       "left": 990,
                       "top": 216,
                       "width": 220,
                       "height": 22,
-                      "text": "versi: Desain"
+                      "text": "Layanan Pesan"
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "518cb66334024243ba9267011b73bf26",
+                      "_id": "64be2328d4de4696aae3b5c1690fd825",
                       "_parent": {
-                        "$ref": "7ed97fb417c14795be99a8db18edc7a7"
+                        "$ref": "6337ae20598a450393ec04df77763181"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -744,9 +714,9 @@
                     },
                     {
                       "_type": "LabelView",
-                      "_id": "1483388f74f1478ebd8ba220a56c9477",
+                      "_id": "c89b83c1843042e0ace527b18a149d5e",
                       "_parent": {
-                        "$ref": "7ed97fb417c14795be99a8db18edc7a7"
+                        "$ref": "6337ae20598a450393ec04df77763181"
                       },
                       "visible": false,
                       "font": "Arial;13;0",
@@ -762,64 +732,64 @@
                   "width": 230,
                   "height": 45,
                   "stereotypeLabel": {
-                    "$ref": "b742b79e5ace440eb384bfcf325256f1"
+                    "$ref": "92406b8acbf043ce86e3f5973f8509f4"
                   },
                   "nameLabel": {
-                    "$ref": "775e3fd7a48a41e6a765fc2bef6e695a"
+                    "$ref": "7b7b657447764fabb34ac7d02d2732f0"
                   },
                   "namespaceLabel": {
-                    "$ref": "518cb66334024243ba9267011b73bf26"
+                    "$ref": "64be2328d4de4696aae3b5c1690fd825"
                   },
                   "propertyLabel": {
-                    "$ref": "1483388f74f1478ebd8ba220a56c9477"
+                    "$ref": "c89b83c1843042e0ace527b18a149d5e"
                   }
                 },
                 {
                   "_type": "UMLLinePartView",
-                  "_id": "a63e47f79e9242efaec4a5853cfbee29",
+                  "_id": "14c400ba08504ddea1ce83968beb5921",
                   "_parent": {
-                    "$ref": "98a5ae1fd4944d37bd18f1cf275f5089"
+                    "$ref": "30a892bb8a434450852c2b364d2e464f"
                   },
                   "model": {
-                    "$ref": "ade59037dc284ad094b1ea3bec8c5c97"
+                    "$ref": "d99eb53b9f974a1db3c3432ad6663ce7"
                   },
                   "font": "Arial;13;0",
                   "left": 1100,
                   "top": 240,
                   "width": 1,
-                  "height": 1046
+                  "height": 922
                 }
               ],
               "font": "Arial;13;0",
               "left": 985,
               "top": 195,
               "width": 230,
-              "height": 1091,
+              "height": 967,
               "nameCompartment": {
-                "$ref": "7ed97fb417c14795be99a8db18edc7a7"
+                "$ref": "6337ae20598a450393ec04df77763181"
               },
               "linePart": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "14c400ba08504ddea1ce83968beb5921"
               }
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "d71e2bd98dd24d719693046b702a25a5",
+              "_id": "3af4172bb3d143f786c07c3b3ed663d1",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "d3eaa8f5b1da4d779f1947a92707f929"
+                "$ref": "483df98849db4e4e87bdc89d4916c274"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "72c04384990545188bfa9fe3aa4079bb",
+                  "_id": "aa89f9892c124080bb5ec95453a595ae",
                   "_parent": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "model": {
-                    "$ref": "d3eaa8f5b1da4d779f1947a92707f929"
+                    "$ref": "483df98849db4e4e87bdc89d4916c274"
                   },
                   "font": "Arial;13;0",
                   "left": 490,
@@ -829,7 +799,7 @@
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "edgePosition": 1,
                   "text": "Mengunggah versi desain",
@@ -838,12 +808,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "6e237f1c1c1b45ecb4bb71a2811522a2",
+                  "_id": "f09d8f9cff0a40eaa5276e1d96a0c851",
                   "_parent": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "model": {
-                    "$ref": "d3eaa8f5b1da4d779f1947a92707f929"
+                    "$ref": "483df98849db4e4e87bdc89d4916c274"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -853,18 +823,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "f25e3f4def854ff6b70e92e4e2d1e023",
+                  "_id": "62993124be4642a6aa72219f56189698",
                   "_parent": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "model": {
-                    "$ref": "d3eaa8f5b1da4d779f1947a92707f929"
+                    "$ref": "483df98849db4e4e87bdc89d4916c274"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -874,18 +844,18 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "5de48dc9a6954168aa2a41a15cb20f32",
+                  "_id": "f9e265f143864a11ad30d819dcbebdf3",
                   "_parent": {
-                    "$ref": "d71e2bd98dd24d719693046b702a25a5"
+                    "$ref": "3af4172bb3d143f786c07c3b3ed663d1"
                   },
                   "model": {
-                    "$ref": "d3eaa8f5b1da4d779f1947a92707f929"
+                    "$ref": "483df98849db4e4e87bdc89d4916c274"
                   },
                   "font": "Arial;13;0",
                   "left": 784,
@@ -897,44 +867,44 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "tail": {
-                "$ref": "378fad88648f49a288b8891e0b715f62"
+                "$ref": "bde7124a96144bbb98225036206a8a84"
               },
               "points": "480:328;790:328",
               "nameLabel": {
-                "$ref": "72c04384990545188bfa9fe3aa4079bb"
+                "$ref": "aa89f9892c124080bb5ec95453a595ae"
               },
               "stereotypeLabel": {
-                "$ref": "6e237f1c1c1b45ecb4bb71a2811522a2"
+                "$ref": "f09d8f9cff0a40eaa5276e1d96a0c851"
               },
               "propertyLabel": {
-                "$ref": "f25e3f4def854ff6b70e92e4e2d1e023"
+                "$ref": "62993124be4642a6aa72219f56189698"
               },
               "activation": {
-                "$ref": "5de48dc9a6954168aa2a41a15cb20f32"
+                "$ref": "f9e265f143864a11ad30d819dcbebdf3"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "0fc7022fa66a44ffa9a7267858cc0a31",
+              "_id": "0551fc21abc447ae92a750095e3b1a75",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "e06df4f9f0114206bd7448b75244e07f"
+                "$ref": "78b102164c964333804309eeacff700c"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "84141223be64452aa018a5c79d288a59",
+                  "_id": "ce36719393364a7fad36d2d37632422c",
                   "_parent": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "model": {
-                    "$ref": "e06df4f9f0114206bd7448b75244e07f"
+                    "$ref": "78b102164c964333804309eeacff700c"
                   },
                   "font": "Arial;13;0",
                   "left": 800,
@@ -944,21 +914,21 @@
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "edgePosition": 1,
-                  "text": "Menyimpan versi desain",
+                  "text": "Menyimpan versi; kirim pemberitahuan desain siap ditinjau",
                   "visible": true,
                   "wordWrap": true
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "7840879da57547b284bd79f3b13da2a5",
+                  "_id": "64b868c532884870902dca8723172a6d",
                   "_parent": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "model": {
-                    "$ref": "e06df4f9f0114206bd7448b75244e07f"
+                    "$ref": "78b102164c964333804309eeacff700c"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -968,18 +938,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "3d754875336e42408252fd1fa5ce7a0c",
+                  "_id": "467cc2555f3c41c182fb9db27963ac8f",
                   "_parent": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "model": {
-                    "$ref": "e06df4f9f0114206bd7448b75244e07f"
+                    "$ref": "78b102164c964333804309eeacff700c"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -989,77 +959,192 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "189a722a65914d138a34fa2231f54721",
+                  "_id": "3313e7c4abe74dff8111e50ecb02f3d1",
                   "_parent": {
-                    "$ref": "0fc7022fa66a44ffa9a7267858cc0a31"
+                    "$ref": "0551fc21abc447ae92a750095e3b1a75"
                   },
                   "model": {
-                    "$ref": "e06df4f9f0114206bd7448b75244e07f"
+                    "$ref": "78b102164c964333804309eeacff700c"
                   },
                   "font": "Arial;13;0",
                   "left": 1094,
                   "top": 390,
                   "width": 12,
-                  "height": 22,
+                  "height": 74,
                   "visible": true
                 }
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "14c400ba08504ddea1ce83968beb5921"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "points": "790:390;1100:390",
               "nameLabel": {
-                "$ref": "84141223be64452aa018a5c79d288a59"
+                "$ref": "ce36719393364a7fad36d2d37632422c"
               },
               "stereotypeLabel": {
-                "$ref": "7840879da57547b284bd79f3b13da2a5"
+                "$ref": "64b868c532884870902dca8723172a6d"
               },
               "propertyLabel": {
-                "$ref": "3d754875336e42408252fd1fa5ce7a0c"
+                "$ref": "467cc2555f3c41c182fb9db27963ac8f"
               },
               "activation": {
-                "$ref": "189a722a65914d138a34fa2231f54721"
+                "$ref": "3313e7c4abe74dff8111e50ecb02f3d1"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "67eceda6c28a4c9384b011304dcc0cab",
+              "_id": "a9184321d59c4affa93d7049d996ba16",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "46144bc9986a421894d7eab7d8bbc533"
+                "$ref": "b19d039880594d73964727b8a609a011"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "b834b8f4706749e29bdacac8dd41f43f",
+                  "_id": "2d90df633f4948d286f270397d5984ff",
                   "_parent": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
                   },
                   "model": {
-                    "$ref": "46144bc9986a421894d7eab7d8bbc533"
+                    "$ref": "b19d039880594d73964727b8a609a011"
                   },
                   "font": "Arial;13;0",
                   "left": 180,
                   "top": 412,
+                  "width": 910,
+                  "height": 36,
+                  "alpha": -4.570492625780596,
+                  "distance": 14.142135623730951,
+                  "hostEdge": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "edgePosition": 1,
+                  "text": "Menerima WhatsApp dan email: desain siap",
+                  "visible": true,
+                  "wordWrap": true
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "45f6ebb998714f23852892ccb79e9417",
+                  "_parent": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "model": {
+                    "$ref": "b19d039880594d73964727b8a609a011"
+                  },
+                  "visible": false,
+                  "font": "Arial;13;0",
+                  "left": 75,
+                  "top": 81,
+                  "height": 13,
+                  "alpha": 1.5707963267948966,
+                  "distance": 25,
+                  "hostEdge": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "edgePosition": 1
+                },
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "a2538bd44dfc417b97de8f9bd1eef487",
+                  "_parent": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "model": {
+                    "$ref": "b19d039880594d73964727b8a609a011"
+                  },
+                  "visible": false,
+                  "font": "Arial;13;0",
+                  "left": 75,
+                  "top": 116,
+                  "height": 13,
+                  "alpha": -1.5707963267948966,
+                  "distance": 10,
+                  "hostEdge": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "edgePosition": 1
+                },
+                {
+                  "_type": "UMLActivationView",
+                  "_id": "ab951774ff0f4e7198ecd9cc86b95b07",
+                  "_parent": {
+                    "$ref": "a9184321d59c4affa93d7049d996ba16"
+                  },
+                  "model": {
+                    "$ref": "b19d039880594d73964727b8a609a011"
+                  },
+                  "font": "Arial;13;0",
+                  "left": 164,
+                  "top": 452,
+                  "width": 12,
+                  "height": 472,
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "head": {
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
+              },
+              "tail": {
+                "$ref": "14c400ba08504ddea1ce83968beb5921"
+              },
+              "points": "1100:452;170:452",
+              "nameLabel": {
+                "$ref": "2d90df633f4948d286f270397d5984ff"
+              },
+              "stereotypeLabel": {
+                "$ref": "45f6ebb998714f23852892ccb79e9417"
+              },
+              "propertyLabel": {
+                "$ref": "a2538bd44dfc417b97de8f9bd1eef487"
+              },
+              "activation": {
+                "$ref": "ab951774ff0f4e7198ecd9cc86b95b07"
+              },
+              "showSequenceNumber": false
+            },
+            {
+              "_type": "UMLSeqMessageView",
+              "_id": "52593b80763b4e9aa3a4952dd1b85af8",
+              "_parent": {
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
+              },
+              "model": {
+                "$ref": "6955054802cc4f4d85578e00ea0b90c8"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "54449b649b724a1da99c9bf41f7e1fb3",
+                  "_parent": {
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
+                  },
+                  "model": {
+                    "$ref": "6955054802cc4f4d85578e00ea0b90c8"
+                  },
+                  "font": "Arial;13;0",
+                  "left": 180,
+                  "top": 474,
                   "width": 600,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "edgePosition": 1,
                   "text": "Membuka desain pesanan",
@@ -1068,12 +1153,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "51f1049d0946465bb82e2ddaa32a142e",
+                  "_id": "39e0f1e9723741c4b136614dedd757bf",
                   "_parent": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "model": {
-                    "$ref": "46144bc9986a421894d7eab7d8bbc533"
+                    "$ref": "6955054802cc4f4d85578e00ea0b90c8"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1083,18 +1168,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "fe62feff4065490b9e9b8d1958848284",
+                  "_id": "46fbdb8958014046913e9cfb726ae36e",
                   "_parent": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "model": {
-                    "$ref": "46144bc9986a421894d7eab7d8bbc533"
+                    "$ref": "6955054802cc4f4d85578e00ea0b90c8"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1104,136 +1189,21 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "210fa614beb6449d8ba3fe2f767f3295",
+                  "_id": "9e394bfc4dfb4194bc98765d4adc9e34",
                   "_parent": {
-                    "$ref": "67eceda6c28a4c9384b011304dcc0cab"
+                    "$ref": "52593b80763b4e9aa3a4952dd1b85af8"
                   },
                   "model": {
-                    "$ref": "46144bc9986a421894d7eab7d8bbc533"
+                    "$ref": "6955054802cc4f4d85578e00ea0b90c8"
                   },
                   "font": "Arial;13;0",
                   "left": 784,
-                  "top": 452,
-                  "width": 12,
-                  "height": 198,
-                  "visible": true
-                }
-              ],
-              "font": "Arial;13;0",
-              "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
-              },
-              "tail": {
-                "$ref": "cb29cdfda10d49728a97b36e3a144289"
-              },
-              "points": "170:452;790:452",
-              "nameLabel": {
-                "$ref": "b834b8f4706749e29bdacac8dd41f43f"
-              },
-              "stereotypeLabel": {
-                "$ref": "51f1049d0946465bb82e2ddaa32a142e"
-              },
-              "propertyLabel": {
-                "$ref": "fe62feff4065490b9e9b8d1958848284"
-              },
-              "activation": {
-                "$ref": "210fa614beb6449d8ba3fe2f767f3295"
-              },
-              "showSequenceNumber": false
-            },
-            {
-              "_type": "UMLSeqMessageView",
-              "_id": "02672c155ca140be86d232a1aa5b9dab",
-              "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
-              },
-              "model": {
-                "$ref": "c271ecbe2a584a949434f0a59a222d0f"
-              },
-              "subViews": [
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "a9c6109f1f3444f6884c92b20a1b0923",
-                  "_parent": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "model": {
-                    "$ref": "c271ecbe2a584a949434f0a59a222d0f"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 800,
-                  "top": 474,
-                  "width": 290,
-                  "height": 36,
-                  "alpha": -4.570492625780596,
-                  "distance": 14.142135623730951,
-                  "hostEdge": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "edgePosition": 1,
-                  "text": "Mengambil versi terbaru",
-                  "visible": true,
-                  "wordWrap": true
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "a41504699854472086f3067ee1570f10",
-                  "_parent": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "model": {
-                    "$ref": "c271ecbe2a584a949434f0a59a222d0f"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 81,
-                  "height": 13,
-                  "alpha": 1.5707963267948966,
-                  "distance": 25,
-                  "hostEdge": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "90bcdde84391478cb0560f150860ef95",
-                  "_parent": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "model": {
-                    "$ref": "c271ecbe2a584a949434f0a59a222d0f"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 116,
-                  "height": 13,
-                  "alpha": -1.5707963267948966,
-                  "distance": 10,
-                  "hostEdge": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "UMLActivationView",
-                  "_id": "98992e2d118c4218a2ff24a4d6d40f64",
-                  "_parent": {
-                    "$ref": "02672c155ca140be86d232a1aa5b9dab"
-                  },
-                  "model": {
-                    "$ref": "c271ecbe2a584a949434f0a59a222d0f"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 1094,
                   "top": 514,
                   "width": 12,
                   "height": 74,
@@ -1242,68 +1212,68 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
               },
-              "points": "790:514;1100:514",
+              "points": "170:514;790:514",
               "nameLabel": {
-                "$ref": "a9c6109f1f3444f6884c92b20a1b0923"
+                "$ref": "54449b649b724a1da99c9bf41f7e1fb3"
               },
               "stereotypeLabel": {
-                "$ref": "a41504699854472086f3067ee1570f10"
+                "$ref": "39e0f1e9723741c4b136614dedd757bf"
               },
               "propertyLabel": {
-                "$ref": "90bcdde84391478cb0560f150860ef95"
+                "$ref": "46fbdb8958014046913e9cfb726ae36e"
               },
               "activation": {
-                "$ref": "98992e2d118c4218a2ff24a4d6d40f64"
+                "$ref": "9e394bfc4dfb4194bc98765d4adc9e34"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "68dc6ac8934f4d96ad53f3f5ab9e4f81",
+              "_id": "250ee006c3434e9f95913eedb897f66a",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "bc04edb4981d44cca9560a41acf09572"
+                "$ref": "d4b92ced913843fe9e2189b1337009a7"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "77173dfc3e94480398313870e4be6abc",
+                  "_id": "3555a095b189456ca91a3950a11650ff",
                   "_parent": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "model": {
-                    "$ref": "bc04edb4981d44cca9560a41acf09572"
+                    "$ref": "d4b92ced913843fe9e2189b1337009a7"
                   },
                   "font": "Arial;13;0",
-                  "left": 800,
+                  "left": 180,
                   "top": 536,
-                  "width": 290,
+                  "width": 600,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "edgePosition": 1,
-                  "text": "Mengembalikan berkas desain",
+                  "text": "Menampilkan berkas desain versi terbaru",
                   "visible": true,
                   "wordWrap": true
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "3471116faada4ca8abf57abbca458798",
+                  "_id": "9d64c0d794554747852d72c17a922654",
                   "_parent": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "model": {
-                    "$ref": "bc04edb4981d44cca9560a41acf09572"
+                    "$ref": "d4b92ced913843fe9e2189b1337009a7"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1313,18 +1283,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "204ce301e9104950bf7e98637a8cbb89",
+                  "_id": "41090f7b939d49a7adfcf6b847195130",
                   "_parent": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "model": {
-                    "$ref": "bc04edb4981d44cca9560a41acf09572"
+                    "$ref": "d4b92ced913843fe9e2189b1337009a7"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1334,21 +1304,21 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "10f145f865bc4ef48ae1433c6977d5d6",
+                  "_id": "9810c6f10d2849e48e40fc3722f96ae0",
                   "_parent": {
-                    "$ref": "68dc6ac8934f4d96ad53f3f5ab9e4f81"
+                    "$ref": "250ee006c3434e9f95913eedb897f66a"
                   },
                   "model": {
-                    "$ref": "bc04edb4981d44cca9560a41acf09572"
+                    "$ref": "d4b92ced913843fe9e2189b1337009a7"
                   },
                   "font": "Arial;13;0",
-                  "left": 784,
+                  "left": 164,
                   "top": 576,
                   "width": 12,
                   "height": 12,
@@ -1357,169 +1327,54 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
               },
               "tail": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
-              "points": "1100:576;790:576",
+              "points": "790:576;170:576",
               "nameLabel": {
-                "$ref": "77173dfc3e94480398313870e4be6abc"
+                "$ref": "3555a095b189456ca91a3950a11650ff"
               },
               "stereotypeLabel": {
-                "$ref": "3471116faada4ca8abf57abbca458798"
+                "$ref": "9d64c0d794554747852d72c17a922654"
               },
               "propertyLabel": {
-                "$ref": "204ce301e9104950bf7e98637a8cbb89"
+                "$ref": "41090f7b939d49a7adfcf6b847195130"
               },
               "activation": {
-                "$ref": "10f145f865bc4ef48ae1433c6977d5d6"
+                "$ref": "9810c6f10d2849e48e40fc3722f96ae0"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "f059b2b29c854f9d8382573081915ad9",
+              "_id": "3cf7118875e041958bf14584c1f3a54e",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "b68f2733ba694b55b1206d3bd3bb8332"
+                "$ref": "9bd53635cf0847ffb226b33ecc614f7c"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "37d3080f5dd244089f1085c65428b08f",
+                  "_id": "a50899fc635b4c218001197bee85b2eb",
                   "_parent": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "model": {
-                    "$ref": "b68f2733ba694b55b1206d3bd3bb8332"
+                    "$ref": "9bd53635cf0847ffb226b33ecc614f7c"
                   },
                   "font": "Arial;13;0",
                   "left": 180,
-                  "top": 598,
+                  "top": 644,
                   "width": 600,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "edgePosition": 1,
-                  "text": "Menampilkan desain",
-                  "visible": true,
-                  "wordWrap": true
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "7dfb4696a35d4761893fd2e28bd48f3a",
-                  "_parent": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "model": {
-                    "$ref": "b68f2733ba694b55b1206d3bd3bb8332"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 81,
-                  "height": 13,
-                  "alpha": 1.5707963267948966,
-                  "distance": 25,
-                  "hostEdge": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "a380068012f04a63a346cd8d778f2e32",
-                  "_parent": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "model": {
-                    "$ref": "b68f2733ba694b55b1206d3bd3bb8332"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 116,
-                  "height": 13,
-                  "alpha": -1.5707963267948966,
-                  "distance": 10,
-                  "hostEdge": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "UMLActivationView",
-                  "_id": "ed18a5d2c2b445469c300777f415f757",
-                  "_parent": {
-                    "$ref": "f059b2b29c854f9d8382573081915ad9"
-                  },
-                  "model": {
-                    "$ref": "b68f2733ba694b55b1206d3bd3bb8332"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 164,
-                  "top": 638,
-                  "width": 12,
-                  "height": 12,
-                  "visible": false
-                }
-              ],
-              "font": "Arial;13;0",
-              "head": {
-                "$ref": "cb29cdfda10d49728a97b36e3a144289"
-              },
-              "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
-              },
-              "points": "790:638;170:638",
-              "nameLabel": {
-                "$ref": "37d3080f5dd244089f1085c65428b08f"
-              },
-              "stereotypeLabel": {
-                "$ref": "7dfb4696a35d4761893fd2e28bd48f3a"
-              },
-              "propertyLabel": {
-                "$ref": "a380068012f04a63a346cd8d778f2e32"
-              },
-              "activation": {
-                "$ref": "ed18a5d2c2b445469c300777f415f757"
-              },
-              "showSequenceNumber": false
-            },
-            {
-              "_type": "UMLSeqMessageView",
-              "_id": "03e4c980cf454e209d4e1b2fcc7bea6d",
-              "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
-              },
-              "model": {
-                "$ref": "96544f44f09d4d07a0451f82d41062b3"
-              },
-              "subViews": [
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "dac3a4bf3bc449c7b6d2e62af7018adc",
-                  "_parent": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
-                  },
-                  "model": {
-                    "$ref": "96544f44f09d4d07a0451f82d41062b3"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 180,
-                  "top": 706,
-                  "width": 600,
-                  "height": 36,
-                  "alpha": -4.570492625780596,
-                  "distance": 14.142135623730951,
-                  "hostEdge": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "edgePosition": 1,
                   "text": "Menyetujui desain",
@@ -1528,12 +1383,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "93556b376592401d865915d25aeeef1f",
+                  "_id": "af0dc82a77684e4daf64a93bc8c0c516",
                   "_parent": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "model": {
-                    "$ref": "96544f44f09d4d07a0451f82d41062b3"
+                    "$ref": "9bd53635cf0847ffb226b33ecc614f7c"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1543,18 +1398,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "e0ad997795074e4a9d6dd541b21ba436",
+                  "_id": "189f8776231c422992c00c8029b7751b",
                   "_parent": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "model": {
-                    "$ref": "96544f44f09d4d07a0451f82d41062b3"
+                    "$ref": "9bd53635cf0847ffb226b33ecc614f7c"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1564,22 +1419,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "8902c7688da94cc6bd7512377a871b6f",
+                  "_id": "ac03fcbe2ab3468d8a03f9ecf3d490fe",
                   "_parent": {
-                    "$ref": "03e4c980cf454e209d4e1b2fcc7bea6d"
+                    "$ref": "3cf7118875e041958bf14584c1f3a54e"
                   },
                   "model": {
-                    "$ref": "96544f44f09d4d07a0451f82d41062b3"
+                    "$ref": "9bd53635cf0847ffb226b33ecc614f7c"
                   },
                   "font": "Arial;13;0",
                   "left": 784,
-                  "top": 746,
+                  "top": 684,
                   "width": 12,
                   "height": 74,
                   "visible": true
@@ -1587,68 +1442,68 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "tail": {
-                "$ref": "cb29cdfda10d49728a97b36e3a144289"
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
               },
-              "points": "170:746;790:746",
+              "points": "170:684;790:684",
               "nameLabel": {
-                "$ref": "dac3a4bf3bc449c7b6d2e62af7018adc"
+                "$ref": "a50899fc635b4c218001197bee85b2eb"
               },
               "stereotypeLabel": {
-                "$ref": "93556b376592401d865915d25aeeef1f"
+                "$ref": "af0dc82a77684e4daf64a93bc8c0c516"
               },
               "propertyLabel": {
-                "$ref": "e0ad997795074e4a9d6dd541b21ba436"
+                "$ref": "189f8776231c422992c00c8029b7751b"
               },
               "activation": {
-                "$ref": "8902c7688da94cc6bd7512377a871b6f"
+                "$ref": "ac03fcbe2ab3468d8a03f9ecf3d490fe"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "9afc52d23a0542b8a2debd76e071808a",
+              "_id": "793ff09fda2c4095a13f6709ed667d28",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "4ee34c48d1474d96b551831470db0a2a"
+                "$ref": "23a86dc1bf72471da5f1a11aa01d9516"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "e0237a4f4be74280ba6f3156d54b2cd6",
+                  "_id": "26150cbe23ff4ae5b1712323172ae27f",
                   "_parent": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "model": {
-                    "$ref": "4ee34c48d1474d96b551831470db0a2a"
+                    "$ref": "23a86dc1bf72471da5f1a11aa01d9516"
                   },
                   "font": "Arial;13;0",
                   "left": 800,
-                  "top": 768,
+                  "top": 706,
                   "width": 290,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "edgePosition": 1,
-                  "text": "Mencatat persetujuan pelanggan",
+                  "text": "Mencatat persetujuan; kirim pemberitahuan ke Tim Desain",
                   "visible": true,
                   "wordWrap": true
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "c57bd19a046b4bfd91131b31b51db560",
+                  "_id": "0c2afeb2484348d79629b8f2a8aa49c7",
                   "_parent": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "model": {
-                    "$ref": "4ee34c48d1474d96b551831470db0a2a"
+                    "$ref": "23a86dc1bf72471da5f1a11aa01d9516"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1658,18 +1513,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "6d9f816e48154595ab71d095a5ba1387",
+                  "_id": "dc63f7f80997443b8e5591b35d1b4446",
                   "_parent": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "model": {
-                    "$ref": "4ee34c48d1474d96b551831470db0a2a"
+                    "$ref": "23a86dc1bf72471da5f1a11aa01d9516"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1679,22 +1534,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "d2b8dc89155f434a8288a6d5ad4fb1ee",
+                  "_id": "9f84ebb0e672446a8c3abbf31ca0dca3",
                   "_parent": {
-                    "$ref": "9afc52d23a0542b8a2debd76e071808a"
+                    "$ref": "793ff09fda2c4095a13f6709ed667d28"
                   },
                   "model": {
-                    "$ref": "4ee34c48d1474d96b551831470db0a2a"
+                    "$ref": "23a86dc1bf72471da5f1a11aa01d9516"
                   },
                   "font": "Arial;13;0",
                   "left": 1094,
-                  "top": 808,
+                  "top": 746,
                   "width": 12,
                   "height": 22,
                   "visible": true
@@ -1702,54 +1557,54 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "14c400ba08504ddea1ce83968beb5921"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
-              "points": "790:808;1100:808",
+              "points": "790:746;1100:746",
               "nameLabel": {
-                "$ref": "e0237a4f4be74280ba6f3156d54b2cd6"
+                "$ref": "26150cbe23ff4ae5b1712323172ae27f"
               },
               "stereotypeLabel": {
-                "$ref": "c57bd19a046b4bfd91131b31b51db560"
+                "$ref": "0c2afeb2484348d79629b8f2a8aa49c7"
               },
               "propertyLabel": {
-                "$ref": "6d9f816e48154595ab71d095a5ba1387"
+                "$ref": "dc63f7f80997443b8e5591b35d1b4446"
               },
               "activation": {
-                "$ref": "d2b8dc89155f434a8288a6d5ad4fb1ee"
+                "$ref": "9f84ebb0e672446a8c3abbf31ca0dca3"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "ea901b51c81848998bd9be8b9098e23e",
+              "_id": "52f65ef0e86446e5a9987f631b5a034a",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "2253aacf339d4069a1c6319272b403ee"
+                "$ref": "3f078bffc86b457285a7fe566204f700"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "050f8e81bdb745d7ab207406930fe445",
+                  "_id": "5d8ed2a3e1994c57b8f5b75741b6873e",
                   "_parent": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "model": {
-                    "$ref": "2253aacf339d4069a1c6319272b403ee"
+                    "$ref": "3f078bffc86b457285a7fe566204f700"
                   },
                   "font": "Arial;13;0",
                   "left": 490,
-                  "top": 830,
+                  "top": 768,
                   "width": 290,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "edgePosition": 1,
                   "text": "Menetapkan desain yang disetujui sebagai final",
@@ -1758,12 +1613,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "1b8cfa5b75be4391bad857aca204efc7",
+                  "_id": "d8f023bc8b4849c6b635091d23f96e59",
                   "_parent": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "model": {
-                    "$ref": "2253aacf339d4069a1c6319272b403ee"
+                    "$ref": "3f078bffc86b457285a7fe566204f700"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1773,18 +1628,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "6c164568b68d4e0d9035956f7c6064b8",
+                  "_id": "052a069c652d428693252fbfdba6db23",
                   "_parent": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "model": {
-                    "$ref": "2253aacf339d4069a1c6319272b403ee"
+                    "$ref": "3f078bffc86b457285a7fe566204f700"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -1794,137 +1649,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "7d580638d6ff44329d11cbdc84bbf446",
+                  "_id": "b9d44ab3d68f4b9c8672b65fa6e3092b",
                   "_parent": {
-                    "$ref": "ea901b51c81848998bd9be8b9098e23e"
+                    "$ref": "52f65ef0e86446e5a9987f631b5a034a"
                   },
                   "model": {
-                    "$ref": "2253aacf339d4069a1c6319272b403ee"
+                    "$ref": "3f078bffc86b457285a7fe566204f700"
                   },
                   "font": "Arial;13;0",
                   "left": 784,
-                  "top": 870,
-                  "width": 12,
-                  "height": 74,
-                  "visible": true
-                }
-              ],
-              "font": "Arial;13;0",
-              "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
-              },
-              "tail": {
-                "$ref": "378fad88648f49a288b8891e0b715f62"
-              },
-              "points": "480:870;790:870",
-              "nameLabel": {
-                "$ref": "050f8e81bdb745d7ab207406930fe445"
-              },
-              "stereotypeLabel": {
-                "$ref": "1b8cfa5b75be4391bad857aca204efc7"
-              },
-              "propertyLabel": {
-                "$ref": "6c164568b68d4e0d9035956f7c6064b8"
-              },
-              "activation": {
-                "$ref": "7d580638d6ff44329d11cbdc84bbf446"
-              },
-              "showSequenceNumber": false
-            },
-            {
-              "_type": "UMLSeqMessageView",
-              "_id": "67c7b866065c486cabb048b9c67afd8a",
-              "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
-              },
-              "model": {
-                "$ref": "f54247c937d8439586081f0813b70438"
-              },
-              "subViews": [
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "9bee8e0ca6dd4eec809de7125012f5bf",
-                  "_parent": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "model": {
-                    "$ref": "f54247c937d8439586081f0813b70438"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 800,
-                  "top": 892,
-                  "width": 290,
-                  "height": 36,
-                  "alpha": -4.570492625780596,
-                  "distance": 14.142135623730951,
-                  "hostEdge": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "edgePosition": 1,
-                  "text": "Menetapkan versi final",
-                  "visible": true,
-                  "wordWrap": true
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "801ed2dcc4354c69840194304ab07639",
-                  "_parent": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "model": {
-                    "$ref": "f54247c937d8439586081f0813b70438"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 81,
-                  "height": 13,
-                  "alpha": 1.5707963267948966,
-                  "distance": 25,
-                  "hostEdge": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "EdgeLabelView",
-                  "_id": "c301de7b3f6d40d5a2a0aa200e7a0324",
-                  "_parent": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "model": {
-                    "$ref": "f54247c937d8439586081f0813b70438"
-                  },
-                  "visible": false,
-                  "font": "Arial;13;0",
-                  "left": 75,
-                  "top": 116,
-                  "height": 13,
-                  "alpha": -1.5707963267948966,
-                  "distance": 10,
-                  "hostEdge": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "edgePosition": 1
-                },
-                {
-                  "_type": "UMLActivationView",
-                  "_id": "044b4f98189a4f54b480fa19818f9f4e",
-                  "_parent": {
-                    "$ref": "67c7b866065c486cabb048b9c67afd8a"
-                  },
-                  "model": {
-                    "$ref": "f54247c937d8439586081f0813b70438"
-                  },
-                  "font": "Arial;13;0",
-                  "left": 1094,
-                  "top": 932,
+                  "top": 808,
                   "width": 12,
                   "height": 22,
                   "visible": true
@@ -1932,54 +1672,54 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "bde7124a96144bbb98225036206a8a84"
               },
-              "points": "790:932;1100:932",
+              "points": "480:808;790:808",
               "nameLabel": {
-                "$ref": "9bee8e0ca6dd4eec809de7125012f5bf"
+                "$ref": "5d8ed2a3e1994c57b8f5b75741b6873e"
               },
               "stereotypeLabel": {
-                "$ref": "801ed2dcc4354c69840194304ab07639"
+                "$ref": "d8f023bc8b4849c6b635091d23f96e59"
               },
               "propertyLabel": {
-                "$ref": "c301de7b3f6d40d5a2a0aa200e7a0324"
+                "$ref": "052a069c652d428693252fbfdba6db23"
               },
               "activation": {
-                "$ref": "044b4f98189a4f54b480fa19818f9f4e"
+                "$ref": "b9d44ab3d68f4b9c8672b65fa6e3092b"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "4478f88993794c2d823273c5dd6104f8",
+              "_id": "b2b8b30779984771bed2f6f04ab8d912",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "e69aba54baf44df898d476776696b146"
+                "$ref": "a5084ee101584e06b57d277d792af1d7"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "fac2b265b9864f35b16f58bd0e3f3144",
+                  "_id": "d1d57a371f884df29acfa5987556b88e",
                   "_parent": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "model": {
-                    "$ref": "e69aba54baf44df898d476776696b146"
+                    "$ref": "a5084ee101584e06b57d277d792af1d7"
                   },
                   "font": "Arial;13;0",
                   "left": 180,
-                  "top": 996,
+                  "top": 872,
                   "width": 600,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "edgePosition": 1,
                   "text": "Mengirim catatan revisi",
@@ -1988,12 +1728,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "2ec58bab45b5466f84d77586dab1fdfa",
+                  "_id": "0fb23b7b9ec44f1b9da7997afa6ddf84",
                   "_parent": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "model": {
-                    "$ref": "e69aba54baf44df898d476776696b146"
+                    "$ref": "a5084ee101584e06b57d277d792af1d7"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2003,18 +1743,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "2504c8babfa8434a98c200add4a15049",
+                  "_id": "89cf257f043b4d7dae29c4d1cf3864ac",
                   "_parent": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "model": {
-                    "$ref": "e69aba54baf44df898d476776696b146"
+                    "$ref": "a5084ee101584e06b57d277d792af1d7"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2024,22 +1764,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "11f9a74a929e4488bd59c7ca51bc3cff",
+                  "_id": "b1652bb49bce4c4ca8a75b9a1cfa8c28",
                   "_parent": {
-                    "$ref": "4478f88993794c2d823273c5dd6104f8"
+                    "$ref": "b2b8b30779984771bed2f6f04ab8d912"
                   },
                   "model": {
-                    "$ref": "e69aba54baf44df898d476776696b146"
+                    "$ref": "a5084ee101584e06b57d277d792af1d7"
                   },
                   "font": "Arial;13;0",
                   "left": 784,
-                  "top": 1036,
+                  "top": 912,
                   "width": 12,
                   "height": 136,
                   "visible": true
@@ -2047,68 +1787,68 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
               "tail": {
-                "$ref": "cb29cdfda10d49728a97b36e3a144289"
+                "$ref": "a7141c4d6c4643cc8fe23173e145f914"
               },
-              "points": "170:1036;790:1036",
+              "points": "170:912;790:912",
               "nameLabel": {
-                "$ref": "fac2b265b9864f35b16f58bd0e3f3144"
+                "$ref": "d1d57a371f884df29acfa5987556b88e"
               },
               "stereotypeLabel": {
-                "$ref": "2ec58bab45b5466f84d77586dab1fdfa"
+                "$ref": "0fb23b7b9ec44f1b9da7997afa6ddf84"
               },
               "propertyLabel": {
-                "$ref": "2504c8babfa8434a98c200add4a15049"
+                "$ref": "89cf257f043b4d7dae29c4d1cf3864ac"
               },
               "activation": {
-                "$ref": "11f9a74a929e4488bd59c7ca51bc3cff"
+                "$ref": "b1652bb49bce4c4ca8a75b9a1cfa8c28"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "955436dbb9654e4485446c432bd5e770",
+              "_id": "e7343a8f72624dd29ebccd33160efd04",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "c6f4fe0b65454599a3d027e3efb80d95"
+                "$ref": "35b9e63545d84be5b47ae135fdeb7a22"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "634b690d3f2c427585b7ab1ce0a64655",
+                  "_id": "584be6a1a5a342489850dfa5448eeb34",
                   "_parent": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "model": {
-                    "$ref": "c6f4fe0b65454599a3d027e3efb80d95"
+                    "$ref": "35b9e63545d84be5b47ae135fdeb7a22"
                   },
                   "font": "Arial;13;0",
                   "left": 800,
-                  "top": 1058,
+                  "top": 934,
                   "width": 290,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "edgePosition": 1,
-                  "text": "Menyimpan catatan revisi",
+                  "text": "Menyimpan catatan; kirim pemberitahuan ke Tim Desain",
                   "visible": true,
                   "wordWrap": true
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "85999bb9f2c64752a0c80ab588d79570",
+                  "_id": "ed2a12ad8b93498f98ece97e1da9c978",
                   "_parent": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "model": {
-                    "$ref": "c6f4fe0b65454599a3d027e3efb80d95"
+                    "$ref": "35b9e63545d84be5b47ae135fdeb7a22"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2118,18 +1858,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "0416d34dde824ca798340aff5bc827ba",
+                  "_id": "d37a1d9188f54ab4a2a249ec1bac2fc5",
                   "_parent": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "model": {
-                    "$ref": "c6f4fe0b65454599a3d027e3efb80d95"
+                    "$ref": "35b9e63545d84be5b47ae135fdeb7a22"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2139,22 +1879,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "ad8bda2f41ee43318d06071adb9b9784",
+                  "_id": "d223534155d7438188ced52d2842c1c9",
                   "_parent": {
-                    "$ref": "955436dbb9654e4485446c432bd5e770"
+                    "$ref": "e7343a8f72624dd29ebccd33160efd04"
                   },
                   "model": {
-                    "$ref": "c6f4fe0b65454599a3d027e3efb80d95"
+                    "$ref": "35b9e63545d84be5b47ae135fdeb7a22"
                   },
                   "font": "Arial;13;0",
                   "left": 1094,
-                  "top": 1098,
+                  "top": 974,
                   "width": 12,
                   "height": 22,
                   "visible": true
@@ -2162,54 +1902,54 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "a63e47f79e9242efaec4a5853cfbee29"
+                "$ref": "14c400ba08504ddea1ce83968beb5921"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
-              "points": "790:1098;1100:1098",
+              "points": "790:974;1100:974",
               "nameLabel": {
-                "$ref": "634b690d3f2c427585b7ab1ce0a64655"
+                "$ref": "584be6a1a5a342489850dfa5448eeb34"
               },
               "stereotypeLabel": {
-                "$ref": "85999bb9f2c64752a0c80ab588d79570"
+                "$ref": "ed2a12ad8b93498f98ece97e1da9c978"
               },
               "propertyLabel": {
-                "$ref": "0416d34dde824ca798340aff5bc827ba"
+                "$ref": "d37a1d9188f54ab4a2a249ec1bac2fc5"
               },
               "activation": {
-                "$ref": "ad8bda2f41ee43318d06071adb9b9784"
+                "$ref": "d223534155d7438188ced52d2842c1c9"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLSeqMessageView",
-              "_id": "7247c137494545829c200f914bfdf230",
+              "_id": "2d71ca0c04f54c56aad44ee5535c7afe",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "b33892a5ee184067a5f00d4dd44bf666"
+                "$ref": "559a9812aad24d40b6f0bf4bf91d3995"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "3da8d688c35745d1a5e3fac3084e319d",
+                  "_id": "d34718d033a54e06b5df2a6de8e6c723",
                   "_parent": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "model": {
-                    "$ref": "b33892a5ee184067a5f00d4dd44bf666"
+                    "$ref": "559a9812aad24d40b6f0bf4bf91d3995"
                   },
                   "font": "Arial;13;0",
                   "left": 490,
-                  "top": 1120,
+                  "top": 996,
                   "width": 290,
                   "height": 36,
                   "alpha": -4.570492625780596,
                   "distance": 14.142135623730951,
                   "hostEdge": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "edgePosition": 1,
                   "text": "Menampilkan catatan revisi; Tim Desain mengunggah versi baru",
@@ -2218,12 +1958,12 @@
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "fe9856471e99409a985668fc56e67a2b",
+                  "_id": "df8c378986184744a8d05867e6c59d76",
                   "_parent": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "model": {
-                    "$ref": "b33892a5ee184067a5f00d4dd44bf666"
+                    "$ref": "559a9812aad24d40b6f0bf4bf91d3995"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2233,18 +1973,18 @@
                   "alpha": 1.5707963267948966,
                   "distance": 25,
                   "hostEdge": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "3d3ea244beda4757ac04378846babe5c",
+                  "_id": "74faa50593114219994e3f28db7f7bfd",
                   "_parent": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "model": {
-                    "$ref": "b33892a5ee184067a5f00d4dd44bf666"
+                    "$ref": "559a9812aad24d40b6f0bf4bf91d3995"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2254,22 +1994,22 @@
                   "alpha": -1.5707963267948966,
                   "distance": 10,
                   "hostEdge": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "edgePosition": 1
                 },
                 {
                   "_type": "UMLActivationView",
-                  "_id": "93f3a2344ad145fe86c492dd2379c495",
+                  "_id": "af6f260ae5b8441195574bddba788d4b",
                   "_parent": {
-                    "$ref": "7247c137494545829c200f914bfdf230"
+                    "$ref": "2d71ca0c04f54c56aad44ee5535c7afe"
                   },
                   "model": {
-                    "$ref": "b33892a5ee184067a5f00d4dd44bf666"
+                    "$ref": "559a9812aad24d40b6f0bf4bf91d3995"
                   },
                   "font": "Arial;13;0",
                   "left": 474,
-                  "top": 1160,
+                  "top": 1036,
                   "width": 12,
                   "height": 12,
                   "visible": false
@@ -2277,41 +2017,41 @@
               ],
               "font": "Arial;13;0",
               "head": {
-                "$ref": "378fad88648f49a288b8891e0b715f62"
+                "$ref": "bde7124a96144bbb98225036206a8a84"
               },
               "tail": {
-                "$ref": "f2c4fc3936e74d3eab4a2f1655cb5ac3"
+                "$ref": "9041fd379393430bb839f1ac81a319e1"
               },
-              "points": "790:1160;480:1160",
+              "points": "790:1036;480:1036",
               "nameLabel": {
-                "$ref": "3da8d688c35745d1a5e3fac3084e319d"
+                "$ref": "d34718d033a54e06b5df2a6de8e6c723"
               },
               "stereotypeLabel": {
-                "$ref": "fe9856471e99409a985668fc56e67a2b"
+                "$ref": "df8c378986184744a8d05867e6c59d76"
               },
               "propertyLabel": {
-                "$ref": "3d3ea244beda4757ac04378846babe5c"
+                "$ref": "74faa50593114219994e3f28db7f7bfd"
               },
               "activation": {
-                "$ref": "93f3a2344ad145fe86c492dd2379c495"
+                "$ref": "af6f260ae5b8441195574bddba788d4b"
               },
               "showSequenceNumber": false
             },
             {
               "_type": "UMLCombinedFragmentView",
-              "_id": "2d7948f7edaf49de96927014ed80b1e7",
+              "_id": "fbfd53a4143447e28c035b355eda0d74",
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               },
               "model": {
-                "$ref": "a76a13ac61304f85a89df4f8bf407e74"
+                "$ref": "3b655bb4d993447791024d8774be5e8f"
               },
               "subViews": [
                 {
                   "_type": "LabelView",
-                  "_id": "1ff46d6bd176450485ccd36ad8a19927",
+                  "_id": "9efb285f7fdf4a78860613b0d5128405",
                   "_parent": {
-                    "$ref": "2d7948f7edaf49de96927014ed80b1e7"
+                    "$ref": "fbfd53a4143447e28c035b355eda0d74"
                   },
                   "visible": false,
                   "font": "Arial;13;0",
@@ -2322,157 +2062,157 @@
                 },
                 {
                   "_type": "LabelView",
-                  "_id": "740feeeb2d404355aca75ce0ed6a4eee",
+                  "_id": "27568f8cbfd74a7eb763d43588f37dee",
                   "_parent": {
-                    "$ref": "2d7948f7edaf49de96927014ed80b1e7"
+                    "$ref": "fbfd53a4143447e28c035b355eda0d74"
                   },
                   "font": "Arial;13;1",
                   "left": 65,
-                  "top": 663,
+                  "top": 601,
                   "width": 19.07177734375,
                   "height": 13,
                   "text": "alt"
                 },
                 {
                   "_type": "UMLInteractionOperandCompartmentView",
-                  "_id": "5467840460d3498c9164c3b3eb786c95",
+                  "_id": "bfcc323dcab54ae3a4baa4f7b96085ac",
                   "_parent": {
-                    "$ref": "2d7948f7edaf49de96927014ed80b1e7"
+                    "$ref": "fbfd53a4143447e28c035b355eda0d74"
                   },
                   "model": {
-                    "$ref": "a76a13ac61304f85a89df4f8bf407e74"
+                    "$ref": "3b655bb4d993447791024d8774be5e8f"
                   },
                   "subViews": [
                     {
                       "_type": "UMLInteractionOperandView",
-                      "_id": "798000583ff94ffdb42373575ba04b66",
+                      "_id": "4e0d0a66febb40329d8fdf72f7641e97",
                       "model": {
-                        "$ref": "8f2c385f17f44825a02dc3f98ff10bb0"
+                        "$ref": "93206de87b5f4a88bf3071496664b168"
                       },
                       "font": "Arial;13;0",
                       "left": 60,
-                      "top": 678,
-                      "width": 1160,
-                      "height": 290,
-                      "subViews": [
-                        {
-                          "_type": "LabelView",
-                          "_id": "13a0a6bb7fec434da2f4ede199f85300",
-                          "font": "Arial;13;0",
-                          "left": 118,
-                          "top": 683,
-                          "width": 300,
-                          "height": 13,
-                          "text": "[pelanggan menyetujui]",
-                          "_parent": {
-                            "$ref": "798000583ff94ffdb42373575ba04b66"
-                          }
-                        }
-                      ],
-                      "guardLabel": {
-                        "$ref": "13a0a6bb7fec434da2f4ede199f85300"
-                      },
-                      "_parent": {
-                        "$ref": "5467840460d3498c9164c3b3eb786c95"
-                      }
-                    },
-                    {
-                      "_type": "UMLInteractionOperandView",
-                      "_id": "db44dc3d34e84f8e99eaa871780bb7d7",
-                      "model": {
-                        "$ref": "7d3b12d339424afbb32d164073b5e9fa"
-                      },
-                      "font": "Arial;13;0",
-                      "left": 60,
-                      "top": 968,
+                      "top": 616,
                       "width": 1160,
                       "height": 228,
                       "subViews": [
                         {
                           "_type": "LabelView",
-                          "_id": "09db380b1c114c1fada8416dbabc834c",
+                          "_id": "4da4c73278ce46aa8c495fabe66990c3",
                           "font": "Arial;13;0",
                           "left": 118,
-                          "top": 973,
+                          "top": 621,
                           "width": 300,
                           "height": 13,
-                          "text": "[pelanggan meminta revisi (sebelum disetujui)]",
+                          "text": "[pelanggan menyetujui]",
                           "_parent": {
-                            "$ref": "db44dc3d34e84f8e99eaa871780bb7d7"
+                            "$ref": "4e0d0a66febb40329d8fdf72f7641e97"
                           }
                         }
                       ],
                       "guardLabel": {
-                        "$ref": "09db380b1c114c1fada8416dbabc834c"
+                        "$ref": "4da4c73278ce46aa8c495fabe66990c3"
                       },
                       "_parent": {
-                        "$ref": "5467840460d3498c9164c3b3eb786c95"
+                        "$ref": "bfcc323dcab54ae3a4baa4f7b96085ac"
+                      }
+                    },
+                    {
+                      "_type": "UMLInteractionOperandView",
+                      "_id": "4a1e24495d474c47ada75490a32f108e",
+                      "model": {
+                        "$ref": "3889a4e78bca48ab9cc191e88ff542e5"
+                      },
+                      "font": "Arial;13;0",
+                      "left": 60,
+                      "top": 844,
+                      "width": 1160,
+                      "height": 228,
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "21b2c373a5ce4103a525a3d8d2d368ae",
+                          "font": "Arial;13;0",
+                          "left": 118,
+                          "top": 849,
+                          "width": 300,
+                          "height": 13,
+                          "text": "[pelanggan meminta revisi (sebelum disetujui)]",
+                          "_parent": {
+                            "$ref": "4a1e24495d474c47ada75490a32f108e"
+                          }
+                        }
+                      ],
+                      "guardLabel": {
+                        "$ref": "21b2c373a5ce4103a525a3d8d2d368ae"
+                      },
+                      "_parent": {
+                        "$ref": "bfcc323dcab54ae3a4baa4f7b96085ac"
                       }
                     }
                   ],
                   "font": "Arial;13;0",
                   "left": 60,
-                  "top": 678,
+                  "top": 616,
                   "width": 1160,
-                  "height": 518
+                  "height": 456
                 }
               ],
               "font": "Arial;13;0",
               "left": 60,
-              "top": 660,
+              "top": 598,
               "width": 1160,
-              "height": 536,
+              "height": 474,
               "nameLabel": {
-                "$ref": "1ff46d6bd176450485ccd36ad8a19927"
+                "$ref": "9efb285f7fdf4a78860613b0d5128405"
               },
               "frameTypeLabel": {
-                "$ref": "740feeeb2d404355aca75ce0ed6a4eee"
+                "$ref": "27568f8cbfd74a7eb763d43588f37dee"
               },
               "operandCompartment": {
-                "$ref": "5467840460d3498c9164c3b3eb786c95"
+                "$ref": "bfcc323dcab54ae3a4baa4f7b96085ac"
               }
             },
             {
               "_type": "LabelView",
-              "_id": "72d71cd8000f42268825f1699a9cc743",
+              "_id": "2ddd88572a664076b0e2b7abe731d001",
               "font": "Arial;13;0",
               "left": 40,
               "top": 91,
               "width": 1190,
               "height": 65,
-              "text": "Prasyarat: Pesanan telah diverifikasi dan tugas desain sudah diberikan.",
+              "text": "Prasyarat: Pesanan Desain dulu telah diverifikasi dan tugas desain sudah diberikan.",
               "wordWrap": true,
               "horizontalAlignment": 0,
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               }
             },
             {
               "_type": "LabelView",
-              "_id": "5e72279607c545f3a8c0b81ab3d18e15",
+              "_id": "ac924d2450ae4544aabdbfab78ed15d3",
               "font": "Arial;13;0",
               "left": 40,
-              "top": 1357,
+              "top": 1233,
               "width": 1190,
               "height": 65,
-              "text": "Catatan: Hanya pelanggan pemilik pesanan yang dapat menyetujui atau meminta revisi, dan hanya sebelum desain disetujui. Setelah revisi, alur kembali ke pengunggahan versi.",
+              "text": "Catatan: Hanya pelanggan pemilik pesanan yang dapat menyetujui atau meminta revisi, dan hanya sebelum desain disetujui. Pada Langsung cetak, tahap ini dilewati karena berkas siap cetak diunggah saat memesan.",
               "wordWrap": true,
               "horizontalAlignment": 0,
               "_parent": {
-                "$ref": "588d84356b27454faeb39073f9a2f504"
+                "$ref": "3c1a8c54bba14495b310d60b9a94d03f"
               }
             }
           ],
           "defaultDiagram": true,
           "showSequenceNumber": false,
           "_parent": {
-            "$ref": "25e2bd9a15024053bc29eadff494115a"
+            "$ref": "1e4722eaf10746af879a0d3c13cd66cc"
           }
         }
       ],
-      "documentation": "Prasyarat: Pesanan telah diverifikasi dan tugas desain sudah diberikan.\nHanya pelanggan pemilik pesanan yang dapat menyetujui atau meminta revisi, dan hanya sebelum desain disetujui. Setelah revisi, alur kembali ke pengunggahan versi.",
+      "documentation": "Prasyarat: Pesanan Desain dulu telah diverifikasi dan tugas desain sudah diberikan.\nHanya pelanggan pemilik pesanan yang dapat menyetujui atau meminta revisi, dan hanya sebelum desain disetujui. Pada Langsung cetak, tahap ini dilewati karena berkas siap cetak diunggah saat memesan.",
       "_parent": {
-        "$ref": "229fefaf8973422b924a3e11ff5f12f5"
+        "$ref": "2e91a8d744e845daa9e4fd56ba2b4f8a"
       }
     }
   ]
