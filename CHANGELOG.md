@@ -131,3 +131,4 @@ Catatan perubahan, terbaru di bawah per bagian tanggal. Disalin dari catatan ker
 
 ## 2026-11-16 - Lisensi
 - Ditambah `LICENSE` (MIT, Vandikara dan Andika Setiawan; lisensi awal dari commit "Initial commit" di GitHub) dan `THIRD_PARTY_LICENSES.md` (shadcn/ui, sumber `components/ui/button.tsx`).
+- README: badge teknologi, daftar fitur, dan 10 tangkapan layar (`docs/tampilan/screenshots`).
